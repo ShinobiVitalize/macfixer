@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fix Time Machine backup failures on your Mac. Learn how to diagnose stuck backups, repair corrupted volumes, and keep your safety net intact.">
+    <meta name="keywords" content="time machine not working, mac backup fix, time machine error, mac backup repair, time machine stuck, APFS backup fix">
+    <title>Time Machine Failures: How to Rescue Your Backups | MacFixer</title>
+    <meta property="og:title" content="Time Machine Failures: How to Rescue Your Backups | MacFixer">
+    <meta property="og:description" content="Fix Time Machine backup failures on your Mac. Learn how to diagnose stuck backups, repair corrupted volumes, and keep your safety net intact.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://macfixer.com/posts_5.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Time Machine Failures: How to Rescue Your Backups | MacFixer">
+    <link rel="canonical" href="https://macfixer.com/posts_5.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body hidden>
+
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <div class="brand-wrapper">
+          <a href="index.html" class="brand-name">MacFixer</a>
+          <span class="brand-tagline">Expert Mac Troubleshooting</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="posts.html">Blog</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contacts.html" class="cta-button">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="container">
+    <h1>Time Machine Failures: How to Rescue Your Backups</h1>
+    <div class="post-meta">
+      <span>By MacFixer Team</span>
+      <span>|</span>
+      <span>March 5, 2026</span>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+  <div class="container" style="max-width:780px;margin:0 auto;">
+
+    <p>Time Machine is one of macOS's most valuable built-in features — a silent guardian that continuously snapshots your entire system so you can roll back files, apps, and even full installations. But when Time Machine breaks, the consequences are severe: you lose your safety net entirely. Error messages like "backup disk not available," "unable to complete backup," and cryptic verification failures leave many Mac users wondering whether their backups were ever working at all. In this guide, we walk through exactly how to diagnose, repair, and prevent Time Machine failures so your data stays protected.</p>
+
+    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="External SSD connected to a MacBook for Time Machine backup" style="width:100%;border-radius:8px;margin:2rem 0;">
+
+    <h2>Understanding How Time Machine Stores Your Data</h2>
+
+    <p>Before diving into fixes, it helps to understand what is actually happening behind the scenes. Time Machine behaves differently depending on your backup destination and macOS version. On older systems backing up to a network share or NAS, Time Machine creates an HFS+ sparse bundle disk image — essentially a virtual drive file that grows as your backups accumulate. These sparse bundles are notoriously fragile. Network interruptions, unexpected disconnections, or even sleep/wake cycles can leave the image in an inconsistent state, triggering verification errors on the next backup attempt.</p>
+
+    <p>On modern macOS (Big Sur and later) backing up to a directly attached drive, Time Machine uses APFS snapshots instead. APFS snapshots are far more efficient and resilient — they are atomic, space-sharing, and integrated directly into the filesystem. However, they introduce their own category of problems: local snapshots can accumulate on your startup volume and consume significant disk space, and APFS volume corruption requires different repair tools than the old HFS+ approach.</p>
+
+    <p>Knowing which format your backup uses is the first step. Open Disk Utility, select your backup drive, and check whether it is formatted as APFS or Mac OS Extended (Journaled). This determines which repair strategies apply.</p>
+
+    <h2>Diagnosing Stuck and Failed Backups</h2>
+
+    <p>When Time Machine reports vague errors or simply stops completing backups, your best diagnostic tools are <code>tmutil</code> and Console. Open Terminal and run <code>tmutil status</code> to see a real-time snapshot of what the backup daemon is doing. The output includes the current phase (such as "ThinningPreBackup," "Copying," or "Finishing"), the percentage complete, and any stall indicators. If the backup has been stuck at the same percentage for more than an hour, something is wrong.</p>
+
+    <p>For deeper investigation, open Console and filter for the <code>backupd</code> process. This is the daemon that orchestrates Time Machine operations. Look for repeated error messages such as "Error: (-36) SrcErr:NO Copying" (which indicates a read error on the source disk), "Failed to make snapshot" (APFS snapshot creation failure), or "Backup content thinning failed" (the drive is too full to prune old backups before writing new ones).</p>
+
+    <p>Thinning errors deserve special attention. When your backup drive runs low on space, Time Machine must delete older snapshots before it can write new data. If the thinning process itself fails — often because of filesystem corruption or a locked snapshot — backups grind to a halt. You can manually list and delete local snapshots using <code>tmutil listlocalsnapshots /</code> and <code>tmutil deletelocalsnapshots [date]</code>, which often frees enough space to get things moving again.</p>
+
+    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Disk Utility running First Aid on a Time Machine backup volume" style="width:100%;border-radius:8px;margin:2rem 0;">
+
+    <h2>Repairing and Recovering Your Backups</h2>
+
+    <p>Once you have identified the problem, the repair approach depends on severity. For minor issues — a backup that failed mid-write or an InProgress file blocking the next run — the fix is straightforward. Navigate to your Time Machine backup drive in Finder, locate the <code>.inProgress</code> file inside the latest backup folder, and delete it. This tells Time Machine the interrupted backup is abandoned and it should start a fresh incremental pass. In many cases, the next automatic backup will complete normally.</p>
+
+    <p>For APFS volume corruption, use <code>diskutil</code> from Terminal. Run <code>diskutil verifyVolume [volume-name]</code> first to check for errors without making changes. If errors are found, run <code>diskutil repairVolume [volume-name]</code>. For more stubborn corruption, boot into Recovery Mode (hold Command+R on Intel Macs, or press and hold the power button on Apple Silicon) and run First Aid from Disk Utility there, which has elevated permissions to repair mounted volumes.</p>
+
+    <p>If your backup is on an HFS+ sparse bundle (common with NAS setups), you may need to use <code>hdiutil</code> to repair the disk image itself: <code>hdiutil verify /path/to/backup.sparsebundle</code> followed by <code>hdiutil attach -nomount /path/to/backup.sparsebundle</code> and then running Disk Utility on the mounted image. Corrupted band files within the sparse bundle can sometimes be identified and removed individually, though this is an advanced procedure.</p>
+
+    <p>There comes a point, however, where repair is not worth the effort. If Time Machine repeatedly fails verification, if the backup database is so corrupted that browsing old snapshots causes Finder to hang, or if the drive itself is reporting SMART errors, it is time for the nuclear option: start fresh. Delete the existing Backups.backupdb folder (or erase the APFS backup volume), re-select the drive in Time Machine preferences, and let it create a brand-new full backup. You lose your historical snapshots, but you gain a reliable, clean backup going forward — which is infinitely more valuable than a corrupted archive you cannot restore from.</p>
+
+    <h2>Best Practices for Reliable Time Machine Backups</h2>
+
+    <p>Prevention is always better than repair. Choose your backup hardware wisely: an external SSD connected via USB-C or Thunderbolt is the most reliable option for most users. It is fast, has no network dependency, and avoids the sparse bundle fragility of NAS backups. If you do back up to a NAS, use a wired Ethernet connection and ensure the NAS supports native Time Machine (SMB with Apple extensions), not an older AFP share.</p>
+
+    <p>Enable encryption on your Time Machine backup — it adds minimal overhead on modern Apple Silicon Macs and protects your data if the drive is lost or stolen. Periodically test your backups by actually restoring a file or booting from the backup to verify it is functional. A backup you have never tested is a backup you cannot trust.</p>
+
+    <p>Finally, consider following the 3-2-1 rule: keep at least three copies of your data, on two different media types, with one stored offsite. Time Machine can be one layer of your backup strategy, but it should not be the only one. Pair it with a cloud backup service or a second rotated external drive, and you will have a recovery plan that can survive virtually any failure scenario.</p>
+
+    <p>If your Time Machine backups have stopped working and you are not sure where to start, <a href="contacts.html">reach out to MacFixer</a>. We diagnose backup failures every day and can often recover data from drives that appear completely unresponsive.</p>
+
+  </div>
+</article>
+
+<div style="max-width:780px;margin:0 auto;padding:0 2rem 3rem;"><a href="posts.html" style="color:var(--primary-color);font-weight:500;">&larr; Back to Blog</a></div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="brand-name">MacFixer</span>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="posts.html">Blog</a>
+        <a href="contacts.html">Contact</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 MacFixer. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-inner">
+    <p>We use cookies to enhance your experience. By continuing you agree to our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+    <div class="cookie-buttons">
+      <button class="cta-button" id="cookie-accept">Accept</button>
+      <button class="cta-button" style="background:#6b7280;" id="cookie-decline">Decline</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

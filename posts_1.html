@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover 10 hidden macOS Sequoia bugs and learn step-by-step fixes from certified Apple specialists at MacFixer.">
+    <meta name="keywords" content="macOS Sequoia bugs, mac fix sequoia, sequoia update issues, mac troubleshooting, macOS bugs fix">
+    <title>10 Hidden macOS Sequoia Bugs and How to Squash Them | MacFixer</title>
+    <meta property="og:title" content="10 Hidden macOS Sequoia Bugs and How to Squash Them | MacFixer">
+    <meta property="og:description" content="Discover 10 hidden macOS Sequoia bugs and learn step-by-step fixes from certified Apple specialists at MacFixer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://macfixer.com/posts_1.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="10 Hidden macOS Sequoia Bugs and How to Squash Them | MacFixer">
+    <link rel="canonical" href="https://macfixer.com/posts_1.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body hidden>
+
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <div class="brand-wrapper">
+          <a href="index.html" class="brand-name">MacFixer</a>
+          <span class="brand-tagline">Expert Mac Troubleshooting</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="posts.html">Blog</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contacts.html" class="cta-button">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="container">
+    <h1>10 Hidden macOS Sequoia Bugs and How to Squash Them</h1>
+    <div class="post-meta">
+      <span>May 12, 2026</span>
+      <span>MacFixer Team</span>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+  <div class="container" style="max-width:780px;margin:0 auto;">
+
+    <p>Apple's macOS Sequoia brought a wave of exciting features, from redesigned system apps to deeper integration with Apple Intelligence. But beneath the polished surface, a handful of stubborn bugs have been quietly frustrating users since launch. At MacFixer, our certified technicians have catalogued the most common hidden issues and developed reliable fixes for each one. Here are ten macOS Sequoia bugs you might be dealing with right now, along with practical steps to resolve them.</p>
+
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="MacBook running macOS Sequoia with system preferences open" style="width:100%;border-radius:10px;margin:2rem 0;">
+
+    <h2>Connectivity and Hardware Glitches</h2>
+
+    <p><strong>1. Wi-Fi Disconnection After Sleep.</strong> One of the most reported Sequoia bugs is Wi-Fi dropping after the Mac wakes from sleep. The system reconnects to the network but fails to route traffic. The quickest fix is to reset your network configuration. Open Terminal and run:</p>
+
+    <pre><code>sudo ifconfig en0 down && sudo ifconfig en0 up</code></pre>
+
+    <p>For a permanent solution, navigate to <strong>System Settings &gt; Wi-Fi &gt; Advanced</strong>, remove all preferred networks, and re-add only the ones you use. You can also delete the network preference files by running:</p>
+
+    <pre><code>sudo rm -f /Library/Preferences/SystemConfiguration/com.apple.wifi.message-tracer.plist
+sudo rm -f /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist</code></pre>
+
+    <p>Restart your Mac afterward to rebuild clean configuration files.</p>
+
+    <p><strong>2. Bluetooth Pairing Problems.</strong> Bluetooth peripherals, especially third-party mice and keyboards, occasionally refuse to pair or disconnect randomly. Head to <strong>System Settings &gt; Bluetooth</strong>, remove the problematic device, then reset the Bluetooth module by holding <strong>Shift + Option</strong> and clicking the Bluetooth icon in the menu bar. Select <strong>Reset the Bluetooth module</strong> from the debug menu. If the option is unavailable, use Terminal:</p>
+
+    <pre><code>sudo pkill bluetoothd</code></pre>
+
+    <p>The daemon restarts automatically and forces a fresh discovery cycle.</p>
+
+    <p><strong>3. External Monitor Flickering.</strong> Users running external displays via USB-C or HDMI have reported intermittent flickering, particularly at high refresh rates. Open <strong>System Settings &gt; Displays</strong>, lower the refresh rate from 120 Hz to 60 Hz temporarily, then switch back. If the problem persists, reset the NVRAM by shutting down and holding <strong>Option + Command + P + R</strong> during startup. On Apple Silicon Macs, a simple shutdown and 30-second wait often clears display controller glitches.</p>
+
+    <p><strong>4. AirDrop Failures.</strong> AirDrop transfers stalling or failing to discover nearby devices is another recurring headache. Ensure both devices have Wi-Fi and Bluetooth enabled, then toggle AirDrop visibility to <strong>Everyone</strong> under <strong>System Settings &gt; General &gt; AirDrop &amp; Handoff</strong>. If transfers still fail, restart the mDNSResponder service:</p>
+
+    <pre><code>sudo killall -HUP mDNSResponder</code></pre>
+
+    <h2>System Performance and Software Bugs</h2>
+
+    <p><strong>5. Finder Crashes on File Preview.</strong> Finder has a tendency to crash when previewing large files or specific document types in column view. The culprit is often a corrupted QuickLook cache. Clear it with:</p>
+
+    <pre><code>qlmanage -r cache</code></pre>
+
+    <p>If Finder continues to crash, restart it entirely from Activity Monitor or by pressing <strong>Option + Command + Escape</strong> and selecting Finder from the list.</p>
+
+    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80" alt="Terminal window showing macOS diagnostic commands" style="width:100%;border-radius:10px;margin:2rem 0;">
+
+    <p><strong>6. Stage Manager Glitches.</strong> Stage Manager, Apple's window management feature, sometimes renders windows in the wrong order or fails to restore grouped app layouts after a restart. Toggling the feature off and on again under <strong>System Settings &gt; Desktop &amp; Dock &gt; Stage Manager</strong> forces a clean state. For persistent layout issues, delete the Stage Manager preferences:</p>
+
+    <pre><code>defaults delete com.apple.WindowManager</code></pre>
+
+    <p>Then log out and back in to let the system rebuild its configuration.</p>
+
+    <p><strong>7. Slow Spotlight Indexing.</strong> After the Sequoia update, Spotlight may reindex the entire drive, causing the <code>mds_stores</code> process to consume significant CPU for hours or even days. Check indexing status with:</p>
+
+    <pre><code>mdutil -s /</code></pre>
+
+    <p>If indexing seems stuck, force a reindex:</p>
+
+    <pre><code>sudo mdutil -E /</code></pre>
+
+    <p>Allow the process to complete uninterrupted, ideally overnight with the Mac connected to power.</p>
+
+    <p><strong>8. Notification Delays.</strong> Some users notice that app notifications arrive minutes late or not at all. Go to <strong>System Settings &gt; Notifications</strong> and verify each app has its preferred alert style enabled. A quick workaround is to restart the notification daemon:</p>
+
+    <pre><code>killall NotificationCenter</code></pre>
+
+    <p>This clears the queue and re-establishes real-time delivery without a full reboot.</p>
+
+    <h2>Cloud and Battery Issues</h2>
+
+    <p><strong>9. iCloud Sync Stalls.</strong> Documents, photos, and desktop files sometimes stop syncing with iCloud after the update. Sign out of iCloud at <strong>System Settings &gt; Apple ID &gt; Sign Out</strong>, restart, and sign back in. Before doing so, ensure you have a local backup of critical files. You can also monitor sync status from Terminal:</p>
+
+    <pre><code>brctl log --wait --shorten</code></pre>
+
+    <p>This streams real-time iCloud sync events and helps identify which files are stuck.</p>
+
+    <p><strong>10. Battery Drain After Update.</strong> Excessive battery consumption in the first week after upgrading is normal as the system reindexes and optimizes. However, if drain continues beyond a week, check which processes are responsible in <strong>Activity Monitor &gt; Energy</strong>. Common offenders include <code>mds_stores</code>, <code>photolibraryd</code>, and <code>cloudphotod</code>. You can also generate a detailed power report:</p>
+
+    <pre><code>pmset -g log | grep -i "charge" | tail -20</code></pre>
+
+    <p>If a specific background process is consuming disproportionate energy, resetting its related cache or preference file usually restores normal battery life.</p>
+
+    <p>Most of these bugs stem from leftover configuration data conflicting with Sequoia's new system services. A clean reset of the affected subsystem almost always resolves the issue without requiring a full OS reinstall. If you have tried these steps and the problem persists, our team at MacFixer is ready to help. <a href="contacts.html">Reach out to us</a> for a free diagnostic consultation and get your Mac running the way it should.</p>
+
+  </div>
+</article>
+
+<div style="max-width:780px;margin:0 auto;padding:0 2rem 3rem;"><a href="posts.html" style="color:var(--primary-color);font-weight:500;">&larr; Back to Blog</a></div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="brand-name">MacFixer</span>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="posts.html">Blog</a>
+        <a href="contacts.html">Contact</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 MacFixer. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-inner">
+    <p>We use cookies to enhance your experience. By continuing you agree to our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+    <div class="cookie-buttons">
+      <button class="cta-button" id="cookie-accept">Accept</button>
+      <button class="cta-button" style="background:#6b7280;" id="cookie-decline">Decline</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
