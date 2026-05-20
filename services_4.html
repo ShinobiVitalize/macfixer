@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light" style="background: transparent; padding: 0;">
 <a class="navbar-brand" href="/" style="display: flex; align-items: center;">
-<img alt="Speed Up - macOS optimization and performance solutions logo" src="images/image_0_contacts.png" style="max-height: 64px; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease;"/>
+<img alt="Speed Up - macOS optimization and performance solutions logo" src="images/image_0_services_4.png" style="max-height: 64px; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease;"/>
 </a>
 <button aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#mainNavigation" data-toggle="collapse" style="border: 2px solid #FFFFFF; background: #FFFFFF; border-radius: 8px;" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -391,457 +391,66 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </header>
-<div class="row">
-<div class="col-md-6">
-<style>
-/* Universal Image Constraints */
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.contact-container {
-    padding: 60px 30px;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.contact-card {
-    background: #FFFFFF;
-    border-radius: 24px;
-    padding: 50px 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
-}
-
-.contact-title {
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: #2D2D2D;
-    margin-bottom: 15px;
-    letter-spacing: -0.5px;
-}
-
-.contact-subtitle {
-    font-size: 1.2rem;
-    color: #666666;
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-.contact-info-item {
-    background: #F8F9FA;
-    border-radius: 16px;
-    padding: 25px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    border-left: 5px solid #FF6B9D;
-}
-
-.contact-info-item:hover {
-    background: #FFF5F8;
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(255,107,157,0.2);
-}
-
-.contact-icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.contact-info-item:hover .contact-icon {
-    transform: rotate(5deg) scale(1.1);
-}
-
-.contact-icon i {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-}
-
-.contact-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #999999;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.contact-value {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #2D2D2D;
-    line-height: 1.6;
-}
-
-.contact-value a {
-    color: #2D2D2D;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-value a:hover {
-    color: #FF6B9D;
-}
-
-.map-container {
-    margin-top: 40px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.map-container img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.office-hours {
-    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
-    color: #FFFFFF;
-}
-
-.office-hours h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.hours-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.hours-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-}
-
-.hours-list li:last-child {
-    border-bottom: none;
-}
-
-.day {
-    font-weight: 600;
-}
-
-.time {
-    font-weight: 400;
-    opacity: 0.9;
-}
-
-.cta-section {
-    background: #FFF5F8;
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.cta-section h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #2D2D2D;
-    margin-bottom: 15px;
-}
-
-.cta-section p {
-    color: #666666;
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-}
-
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    color: #FFFFFF;
-    padding: 15px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255,107,157,0.3);
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255,107,157,0.4);
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .contact-container {
-        padding: 40px 20px;
-    }
-    
-    .contact-card {
-        padding: 30px 25px;
-        border-radius: 16px;
-    }
-    
-    .contact-title {
-        font-size: 2rem;
-    }
-    
-    .contact-subtitle {
-        font-size: 1rem;
-    }
-    
-    .contact-info-item {
-        padding: 20px;
-    }
-    
-    .contact-value {
-        font-size: 1rem;
-    }
-    
-    .map-container img {
-        height: 200px;
-    }
-    
-    .office-hours {
-        padding: 20px;
-    }
-    
-    .cta-section {
-        padding: 20px;
-    }
-    
-    .cta-section h3 {
-        font-size: 1.4rem;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-title {
-        font-size: 1.6rem;
-    }
-    
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .contact-icon i {
-        font-size: 1.2rem;
-    }
-    
-    .hours-list li {
-        font-size: 0.9rem;
-    }
-}
-</style>
-<div class="contact-container">
-<div class="container">
-<div class="contact-card">
-<h1 class="contact-title">Get in Touch</h1>
-<p class="contact-subtitle">We're here to help you optimize your macOS experience and boost your Mac's performance. Reach out to our expert team for technical support and custom software solutions.</p>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-building"></i>
+<div class="container my-5">
+<article class="row justify-content-center">
+<div class="col-lg-10">
+<div class="card border-0 shadow-sm" style="border-radius: 20px; overflow: hidden;">
+<div class="card-body p-4 p-md-5" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
+<h1 class="display-4 fw-bold mb-4" style="color: #ff3366; font-size: 2.5rem;">Mac Storage Organization &amp; Disk Space Recovery</h1>
+<div class="lead mb-5" style="color: #333333; font-size: 1.2rem; line-height: 1.8;">Is your Mac running out of storage space? Are you constantly seeing warnings about insufficient disk space? Our specialized storage organization service helps you reclaim valuable gigabytes and establish a sustainable system for keeping your Mac clean and organized for the long term.</div>
+<div class="mb-5">
+<img alt="Mac storage analysis dashboard displaying detailed breakdown of disk usage with colorful pie charts showing documents, photos, applications, and system files categories on a modern macOS interface" class="img-fluid rounded-4 shadow-sm" src="images/image_1_services_4.png" style="width: 100%; height: auto; opacity: 1; display: block;"/>
 </div>
-<div class="contact-label">Company</div>
-<div class="contact-value">Apex Digital Solutions</div>
-</div>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<div class="contact-label">Address</div>
-<div class="contact-value">1400 N Dallas Pkwy Suite 300<br/>Plano, TX 75074<br/>
-                    United States
-                </div>
-</div>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-phone"></i>
-</div>
-<div class="contact-label">Phone</div>
-<div class="contact-value">
-<a href="tel:+19727352200">(972) 735-2200</a>
-</div>
-</div>
-<div class="map-container">
-<img alt="Map showing Apex Digital Solutions office location at 1400 N Dallas Parkway Suite 300 in Plano, Texas, with surrounding streets and landmarks visible" src="images/image_1_contacts.png"/>
-</div>
-<div class="office-hours">
-<h3><i class="far fa-clock"></i> Office Hours</h3>
-<ul class="hours-list">
-<li>
-<span class="day">Monday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Tuesday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Wednesday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Thursday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Friday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Saturday</span>
-<span class="time">10:00 AM - 4:00 PM</span>
-</li>
-<li>
-<span class="day">Sunday</span>
-<span class="time">Closed</span>
-</li>
-</ul>
-</div>
-<div class="cta-section">
-<h3>Need Technical Support?</h3>
-<p>Our development team specializes in macOS optimization, custom software solutions, and system integration services.</p>
-<a class="cta-button" href="services.html">
-<i class="fas fa-code"></i>View Our Services</a>
+<section class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #6366f1;">Understanding Your Mac Storage Challenges</h2>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Modern Macs come with fast SSD storage, but even generous storage capacities can fill up surprisingly quickly. Between high-resolution photos, 4K videos, large application files, system backups, and accumulated digital clutter, it's easy to find yourself running out of space. The problem isn't just about having less storage available—a nearly full disk can actually slow down your Mac's performance, affect system stability, and prevent important updates from installing.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Many Mac users struggle to identify what's actually taking up space on their drives. macOS provides basic storage management tools, but they often don't give you the detailed insights needed to make informed decisions about what to keep, what to archive, and what to delete. That's where our systematic approach comes in—we help you understand exactly where your storage is going and develop a personalized strategy for managing it effectively.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Our storage organization service goes beyond simple file deletion. We analyze your usage patterns, identify optimization opportunities, and implement solutions that work with your workflow rather than against it. Whether you're a creative professional dealing with massive media files, a business user with years of documents, or a casual user who's simply accumulated too much digital stuff, we have strategies tailored to your specific situation.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8;">The goal isn't just to free up space once—it's to establish sustainable practices that keep your Mac organized and running smoothly for years to come. We'll show you how to maintain your newly organized storage, prevent future clutter, and make the most of your available disk space without sacrificing the files and applications you actually need.</p>
+</section>
+<section class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #ff3366;">Comprehensive Storage Analysis &amp; Large File Identification</h2>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">The first step in reclaiming your disk space is understanding exactly what's consuming it. We begin with a comprehensive storage analysis using professional-grade tools that go far beyond macOS's built-in storage management. These tools create detailed visual maps of your entire drive, showing you at a glance which folders, file types, and applications are taking up the most space. This bird's-eye view often reveals surprising storage hogs that you never knew existed.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Large files are often the biggest culprits in storage consumption. We systematically identify files over certain size thresholds—typically starting at 100MB and working up to multi-gigabyte files. These might include old video projects, disk images, virtual machine files, or forgotten downloads. For each large file we find, we help you make informed decisions: Is this something you actively use? Could it be archived to external storage? Is it a duplicate or an outdated version? Our approach ensures you never accidentally delete something important.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Duplicate files are another major source of wasted space. Over time, it's easy to accumulate multiple copies of the same photos, documents, or media files scattered across different folders. We use intelligent duplicate detection tools that can identify identical files even if they have different names or are stored in different locations. This process alone can often free up several gigabytes of space, especially if you've been using your Mac for several years.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8;">We also analyze hidden system files and caches that can accumulate over time. Application caches, browser data, old iOS backups, and system logs can consume significant space without providing any real benefit. We safely identify and remove these files while ensuring that nothing critical to your system's operation is affected. This technical cleanup often reveals 10-20GB or more of recoverable space that most users don't even know exists.</p>
+</section>
+<section class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #10b981;">Photo &amp; Video Library Management</h2>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">For many Mac users, photo and video libraries represent the single largest category of storage consumption. Modern smartphones capture images and videos at increasingly high resolutions, and if you've been using iCloud Photos or importing from multiple devices over the years, your Photos library can easily grow to hundreds of gigabytes. Managing this effectively requires a thoughtful strategy that balances accessibility with storage efficiency.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">We help you optimize your Photos library through several approaches. First, we can enable and configure iCloud Photos optimization, which keeps full-resolution versions in the cloud while storing smaller, device-optimized versions locally. This can dramatically reduce your local storage footprint while maintaining access to your entire library. We ensure this is set up correctly and explain how it works so you understand what's happening with your photos.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">For users who prefer to keep full control of their media files, we can help organize photos and videos into a more efficient structure. This might involve creating separate libraries for different time periods or projects, archiving older photos to external drives, or identifying and removing duplicate or low-quality images. We can also help you set up a systematic backup strategy that ensures your precious memories are protected while not consuming excessive local storage.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8;">Video files deserve special attention due to their size. A single 4K video can consume several gigabytes, and if you're a content creator or simply enjoy capturing family moments, these files add up quickly. We help you identify which videos you actually watch or need immediate access to, and develop a strategy for archiving the rest. This might include compressing videos to more efficient formats, moving completed projects to external storage, or setting up a cloud-based archive for long-term storage.</p>
+</section>
+<section class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #f59e0b;">Project Archiving &amp; Document Organization</h2>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Old projects and accumulated documents represent another significant storage category that's often overlooked. Whether you're a creative professional with years of design files, a developer with old code repositories, or a business user with extensive document archives, these files can consume substantial space while rarely being accessed. The key is developing a smart archiving strategy that maintains accessibility when needed while freeing up valuable SSD space.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">We help you identify projects and documents that are candidates for archiving based on age, access patterns, and your specific workflow needs. For example, client projects from more than a year ago, completed creative work that's been delivered, or old business documents that need to be retained for records but aren't actively used. We then help you create a logical archive structure on external storage or cloud services, ensuring everything is properly organized and easily retrievable if needed in the future.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Document organization goes hand-in-hand with archiving. Many users have documents scattered across Downloads, Desktop, Documents, and various other folders with no clear organizational system. We help you establish a logical folder structure that makes sense for your work, consolidate scattered files, and eliminate redundant copies. This not only frees up space but also makes it much easier to find what you need when you need it, improving your overall productivity.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8;">For users with extensive document collections, we can also help implement cloud-based solutions like iCloud Drive, Dropbox, or Google Drive in a way that optimizes local storage. These services offer selective sync features that let you keep certain folders available offline while storing others in the cloud only. We configure these settings to match your actual usage patterns, ensuring you have quick access to frequently used files while less critical documents remain safely stored in the cloud.</p>
+</section>
+<section class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #8b5cf6;">Application Management &amp; System Optimization</h2>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Applications and their associated files can consume surprising amounts of storage space. Beyond the applications themselves, there are support files, caches, preferences, and plugins that accumulate over time. We conduct a thorough review of all installed applications, identifying which ones you actually use and which are simply taking up space. Unused applications and their associated files are prime candidates for removal, often freeing up several gigabytes.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Proper application removal is more complex than simply dragging an app to the Trash. Many applications leave behind support files, preferences, and caches scattered throughout your system. We use professional uninstaller tools that ensure complete removal of applications and all their associated files. This thorough approach not only recovers more storage space but also helps keep your system clean and prevents potential conflicts from leftover files.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">System optimization involves cleaning up various macOS system files that can accumulate over time. This includes old iOS device backups stored locally, Time Machine local snapshots, system logs, and cached files from system updates. We carefully identify and remove these files using safe methods that won't affect your system's stability or functionality. This technical cleanup often reveals significant storage space that most users don't realize is being consumed by system overhead.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8;">We also review and optimize your backup strategy. While backups are essential, they shouldn't consume excessive local storage. We help you configure Time Machine to use external drives or network storage, manage local snapshots appropriately, and ensure your backup system is working efficiently. For users with multiple backup solutions, we help streamline these to eliminate redundancy while maintaining comprehensive data protection.</p>
+</section>
+<section class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #ec4899;">Sustainable Storage Practices &amp; Long-Term Maintenance</h2>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">The ultimate goal of our storage organization service isn't just a one-time cleanup—it's establishing sustainable practices that keep your Mac organized and efficient over the long term. We work with you to develop habits and systems that prevent storage from becoming a problem again. This includes setting up regular maintenance routines, implementing smart file management practices, and using tools that help you stay on top of your storage situation.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">We recommend and help you implement automated solutions where appropriate. This might include scheduling regular cleanup tasks, setting up smart folders that automatically organize certain file types, or configuring cloud services to handle specific categories of files automatically. The goal is to reduce the manual effort required to maintain an organized system, making it easier to sustain good storage practices without constant attention.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Education is a key component of our service. We don't just clean up your Mac and leave—we explain what we're doing and why, teaching you how to recognize storage issues before they become problems. You'll learn how to use macOS's built-in storage management tools effectively, understand what different storage categories mean, and know when it's time to take action. This knowledge empowers you to maintain your Mac's organization independently.</p>
+<p style="color: #333333; font-size: 1.1rem; line-height: 1.8;">Finally, we help you plan for future storage needs. If you're consistently running low on space despite optimization efforts, we can advise on upgrade options, external storage solutions, or cloud service plans that make sense for your usage patterns and budget. Our goal is to ensure you have a storage strategy that works for you now and scales with your needs as they evolve, keeping your Mac running smoothly for years to come.</p>
+</section>
+<div class="mt-5 p-4 rounded-4" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: #ffffff;">
+<h3 class="h4 fw-bold mb-3">Ready to Reclaim Your Mac Storage?</h3>
+<p class="mb-0" style="font-size: 1.1rem; line-height: 1.8;">Don't let a cluttered, full hard drive slow down your Mac or limit your productivity. Our systematic storage organization service will help you recover valuable disk space, establish efficient file management practices, and keep your Mac running at its best. Contact us today to schedule your storage optimization consultation and start enjoying a cleaner, more organized Mac.</p>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="col-md-6">
-<div class="col-md-6 p-4">
-<div class="card shadow-sm" style="border-radius: 20px; border: none; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
-<div class="card-body p-5">
-<h2 class="mb-4" style="color: #1a1a1a; font-weight: 700; font-size: 2rem;">Get In Touch</h2>
-<p class="mb-4" style="color: #555; font-size: 1rem; line-height: 1.6;">Have questions about optimizing your Mac performance? Our development team is here to help you speed up your macOS system and improve your workflow.</p>
-<form class="needs-validation" id="contactForm" novalidate="">
-<div class="mb-4">
-<label class="form-label" for="nameInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Full Name</label>
-<input class="form-control" id="nameInput" required="" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; transition: all 0.3s ease;" type="text"/>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter your name.</div>
-</div>
-<div class="mb-4">
-<label class="form-label" for="emailInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Email Address</label>
-<input class="form-control" id="emailInput" required="" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; transition: all 0.3s ease;" type="email"/>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter a valid email address.</div>
-</div>
-<div class="mb-4">
-<label class="form-label" for="messageInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Message</label>
-<textarea class="form-control" id="messageInput" required="" rows="5" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; resize: vertical; transition: all 0.3s ease;"></textarea>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter your message.</div>
-</div>
-<div class="alert alert-success d-none" id="successMessage" role="alert" style="border-radius: 12px; border: none; background: linear-gradient(135deg, #00d084 0%, #00b872 100%); color: white; font-weight: 600; padding: 16px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 208, 132, 0.3);">
-<i class="fas fa-check-circle me-2"></i>Successfully sent!</div>
-<button class="btn btn-primary w-100" style="border-radius: 12px; padding: 14px 24px; font-size: 1.1rem; font-weight: 600; border: none; background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); transition: all 0.3s ease;" type="submit">
-<i class="fas fa-paper-plane me-2"></i>Send Message
-                </button>
-</form>
-</div>
-</div>
-</div>
-<style>
-    .form-control:focus {
-        border-color: #007bff !important;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15) !important;
-        outline: none;
-    }
-    
-    .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
-    }
-    
-    .btn-primary:active {
-        transform: translateY(0);
-    }
-    
-    .card {
-        transition: all 0.3s ease;
-    }
-    
-    @media (max-width: 768px) {
-        .card-body {
-            padding: 2rem !important;
-        }
-        
-        h2 {
-            font-size: 1.75rem !important;
-        }
-    }
-</style>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        
-        const form = this;
-        const successMessage = document.getElementById('successMessage');
-        
-        if (form.checkValidity()) {
-            successMessage.classList.remove('d-none');
-            
-            setTimeout(function() {
-                successMessage.classList.add('d-none');
-                form.reset();
-                form.classList.remove('was-validated');
-            }, 5000);
-        }
-        
-        form.classList.add('was-validated');
-    });
-    
-    const inputs = document.querySelectorAll('.form-control');
-    inputs.forEach(input => {
-        input.addEventListener('input', function() {
-            if (this.value.trim() !== '') {
-                this.style.borderColor = '#00d084';
-            } else {
-                this.style.borderColor = '#e0e0e0';
-            }
-        });
-        
-        input.addEventListener('blur', function() {
-            if (this.value.trim() === '') {
-                this.style.borderColor = '#e0e0e0';
-            }
-        });
-    });
-</script>
-</div>
+</article>
 </div>
 </div>
 <footer style="width: 100%; z-index: 1000;">

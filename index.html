@@ -1,204 +1,1388 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
     <script src="main.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MacFixer provides expert macOS bug fixing, troubleshooting, and optimization services. Get your Mac running like new with certified Apple specialists.">
-    <meta name="keywords" content="mac fix, macOS bug, mac troubleshooting, apple repair, mac optimization, mac slow fix, macOS error, mac support">
-    <title>Expert Mac Troubleshooting | MacFixer</title>
-    <meta property="og:title" content="Expert Mac Troubleshooting | MacFixer">
-    <meta property="og:description" content="MacFixer provides expert macOS bug fixing, troubleshooting, and optimization services. Get your Mac running like new with certified Apple specialists.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://macfixer.com/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Expert Mac Troubleshooting | MacFixer">
-    <link rel="canonical" href="https://macfixer.com/index.html">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index,follow,max-snippet:150,max-image-preview:large" name="robots"/>
+<meta content="Speed Up - Expert solutions for optimizing macOS performance. Learn how to make working on your Mac more comfortable with professional development insights and technical support." name="description"/>
+<title>Speed Up - macOS Optimization &amp; Performance Solutions</title>
+<meta content="Speed Up - macOS Optimization &amp; Performance Solutions" property="og:title"/>
+<meta content="Speed Up - Expert solutions for optimizing macOS performance. Learn how to make working on your Mac more comfortable with professional development insights and technical support." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Speed Up - macOS Optimization &amp; Performance Solutions" name="twitter:title"/>
+<meta content="Speed Up - Expert solutions for optimizing macOS performance. Learn how to make working on your Mac more comfortable with professional development insights and technical support." name="twitter:description"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+        --primary-color: #FF3B30;
+        --secondary-color: #007AFF;
+        --accent-color: #34C759;
+        --background-light: #F5F5F7;
+        --background-white: #FFFFFF;
+        --text-dark: #1D1D1F;
+        --text-gray: #6E6E73;
+        --border-radius: 18px;
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+        --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background-color: var(--background-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+        color: var(--text-gray);
+    }
+    
+    .card {
+        background: var(--background-white);
+        border-radius: var(--border-radius);
+        border: none;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition);
+        overflow: hidden;
+    }
+    
+    .card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+    }
+    
+    .btn {
+        border-radius: 12px;
+        padding: 12px 28px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: var(--transition);
+        border: none;
+        text-transform: none;
+    }
+    
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: white;
+    }
+    
+    .btn-primary:hover {
+        background-color: #E6342A;
+        transform: scale(1.05);
+    }
+    
+    .btn-secondary {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+    
+    .btn-secondary:hover {
+        background-color: #006EDB;
+        transform: scale(1.05);
+    }
+    
+    .btn-success {
+        background-color: var(--accent-color);
+        color: white;
+    }
+    
+    .btn-success:hover {
+        background-color: #2FB350;
+        transform: scale(1.05);
+    }
+    
+    img {
+        opacity: 1;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+    
+    a:hover {
+        color: var(--primary-color);
+    }
+    
+    .container {
+        max-width: 1200px;
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        .btn {
+            padding: 10px 24px;
+            font-size: 0.95rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body hidden>
-
-<header class="header">
-  <div class="container">
-    <div class="header-content">
-      <div class="logo-container">
-        <div class="brand-wrapper">
-          <a href="index.html" class="brand-name">MacFixer</a>
-          <span class="brand-tagline">Expert Mac Troubleshooting</span>
-        </div>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="posts.html">Blog</a></li>
-          <li><a href="contacts.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="contacts.html" class="cta-button">Get Started</a>
-    </div>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Fix Any macOS Bug Fast and For Good</h1>
-      <p>From spinning beach balls to kernel panics, our certified Apple specialists diagnose and resolve every macOS issue so you can get back to what matters most.</p>
-      <a href="#contact" class="cta-button">Book a Diagnostic</a>
-    </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="MacBook being repaired by a technician at a clean workstation">
-    </div>
-  </div>
-</section>
-
-<section id="about" class="about">
-  <div class="container">
-    <h2>About MacFixer</h2>
-    <div class="about-grid">
-      <div class="about-card animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=400&q=80" alt="Apple certified technician working on a MacBook Pro">
-        <h3>Certified Specialists</h3>
-        <p>Every technician on our team holds an Apple Certified Support Professional credential and averages over eight years of hands-on macOS experience.</p>
-      </div>
-      <div class="about-card animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Remote diagnostic session shown on a Mac screen">
-        <h3>Remote &amp; On-Site Service</h3>
-        <p>Whether you prefer the convenience of a remote screen-share session or need a technician at your door, we adapt to your schedule and workflow.</p>
-      </div>
-      <div class="about-card animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80" alt="Secure data backup being performed on external drives">
-        <h3>Data-Safe Repairs</h3>
-        <p>Your files are sacred. We perform verified backups before every repair and follow strict data-handling protocols so nothing is lost in the process.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="features" class="features">
-  <div class="container">
-    <h2>Key Features</h2>
-    <div class="features-grid">
-      <div class="feature-item animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=400&q=80" alt="Diagnostic dashboard showing macOS system health metrics">
-        <h3>Deep System Diagnostics</h3>
-        <p>Our proprietary diagnostic toolkit scans kernel extensions, launch daemons, disk health, and memory allocation to pinpoint the exact root cause in minutes.</p>
-      </div>
-      <div class="feature-item animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80" alt="Shield icon representing malware protection on macOS">
-        <h3>Malware &amp; Adware Removal</h3>
-        <p>We detect and eliminate browser hijackers, adware injections, and persistent malware that bypass built-in macOS security, then harden your defenses.</p>
-      </div>
-      <div class="feature-item animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Performance graphs showing a Mac speed improvement after optimization">
-        <h3>Performance Optimization</h3>
-        <p>Slow boot times, laggy apps, and overheating fans are symptoms we treat daily. We tune startup items, clear system caches, and optimize storage allocation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="products" class="products">
-  <div class="container">
-    <h2>Our Solutions</h2>
-    <div class="product-grid">
-      <div class="product-card animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=400&q=80" alt="Quick Mac checkup service for basic troubleshooting">
-        <h3>Starter Diagnostic</h3>
-        <p>A 30-minute remote session covering basic system health checks, storage cleanup recommendations, and a prioritized fix list for common macOS issues.</p>
-        <div class="price">$49 / session</div>
-        <a href="#contact" class="cta-button">Get Started</a>
-      </div>
-      <div class="product-card animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Professional Mac repair service with comprehensive diagnostics">
-        <h3>Professional Fix</h3>
-        <p>A full deep-dive session including kernel log analysis, permission repairs, malware scans, driver conflict resolution, and post-fix performance verification.</p>
-        <div class="price">$129 / session</div>
-        <a href="#contact" class="cta-button">Get Started</a>
-      </div>
-      <div class="product-card animate-on-scroll">
-        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=400&q=80" alt="Enterprise Mac fleet management and support service">
-        <h3>Enterprise Support</h3>
-        <p>Dedicated account manager, priority queue, fleet-wide diagnostics for up to 50 Macs, monthly health reports, and 24/7 emergency hotline access.</p>
-        <div class="price">$899 / month</div>
-        <a href="#contact" class="cta-button">Get Started</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-content">
-      <div class="contact-info">
-        <h3>Get in Touch</h3>
-        <p>Have a stubborn macOS issue? Describe your problem and our team will match you with the right specialist. Most inquiries receive a response within two hours.</p>
-        <div class="contact-details">
-          <p><strong>Phone:</strong> +1 (415) 738-2196</p>
-          <p><strong>Email:</strong> contact@macfixer.com</p>
-          <p><strong>Address:</strong> 1240 Valencia Street, Suite 300, San Francisco, CA 94110</p>
-          <p><strong>Hours:</strong> Mon-Fri 8:00 AM - 8:00 PM PST | Sat 9:00 AM - 5:00 PM PST</p>
-        </div>
-      </div>
-      <div class="contact-form">
-        <form id="contact-form">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <select name="service" required>
-              <option value="" disabled selected>Select a Service</option>
-              <option value="starter">Starter Diagnostic - $49</option>
-              <option value="professional">Professional Fix - $129</option>
-              <option value="enterprise">Enterprise Support - $899/mo</option>
-              <option value="other">Other Inquiry</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="Describe your Mac issue..." required></textarea>
-          </div>
-          <button type="submit" class="cta-button">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <span class="brand-name">MacFixer</span>
-      </div>
-      <nav class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="posts.html">Blog</a>
-        <a href="contacts.html">Contact</a>
-        <a href="privacy_policy.html">Privacy Policy</a>
-        <a href="cookie-policy.html">Cookie Policy</a>
-      </nav>
-      <p class="footer-copy">&copy; 2026 MacFixer. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-<div class="cookie-banner" id="cookie-banner">
-  <div class="cookie-inner">
-    <p>We use cookies to enhance your experience. By continuing you agree to our <a href="cookie-policy.html">Cookie Policy</a>.</p>
-    <div class="cookie-buttons">
-      <button class="cta-button" id="cookie-accept">Accept</button>
-      <button class="cta-button" style="background:#6b7280;" id="cookie-decline">Decline</button>
-    </div>
-  </div>
+<body hidden style="display: flex; flex-direction: column; min-height: 100vh;">
+<div id="cookie-popup" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); box-shadow: 0 -4px 20px rgba(0,0,0,0.15); z-index: 10000; border-top: 4px solid #ff6b6b; animation: slideUp 0.4s ease-out;">
+<div class="container py-4">
+<div class="row align-items-center">
+<div class="col-lg-8 mb-3 mb-lg-0">
+<div class="d-flex align-items-start">
+<i class="fas fa-cookie-bite" style="font-size: 2rem; color: #ff6b6b; margin-right: 1rem; margin-top: 0.25rem;"></i>
+<div>
+<h5 style="color: #2d3436; font-weight: 700; margin-bottom: 0.5rem; font-size: 1.1rem;">We Value Your Privacy</h5>
+<p style="color: #636e72; margin-bottom: 0.5rem; font-size: 0.95rem; line-height: 1.5;">We use cookies and similar technologies to enhance your browsing experience, analyze site traffic, and personalize content. Your IP address is anonymized for privacy protection. By clicking "Accept", you consent to our use of cookies.</p>
+<a href="privacy-policy.html" style="color: #0984e3; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: color 0.3s ease;">
+<i class="fas fa-shield-alt" style="margin-right: 0.25rem;"></i>Read our Privacy Policy</a>
 </div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="d-flex flex-column flex-sm-row gap-2 justify-content-lg-end">
+<button id="cookie-decline" style="background: #dfe6e9; color: #2d3436; border: none; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem; white-space: nowrap;">
+<i class="fas fa-times-circle" style="margin-right: 0.5rem;"></i>Decline
+                    </button>
+<button id="cookie-accept" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); color: #ffffff; border: none; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255,107,107,0.3); font-size: 0.95rem; white-space: nowrap;">
+<i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>Accept All
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
+#cookie-decline:hover {
+    background: #b2bec3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#cookie-accept:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+}
+
+@media (max-width: 991px) {
+    #cookie-popup .container {
+        padding: 1.5rem 1rem;
+    }
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('cookie-popup');
+    if (!popup) return;
+    
+    function loadAnalytics() {
+        // Google Analytics 4
+        const gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+        document.head.appendChild(gaScript);
+        
+        gaScript.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', {
+                'anonymize_ip': true,
+                'cookie_flags': 'SameSite=None;Secure'
+            });
+        };
+        
+        // Facebook Pixel
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    }
+    
+    // Check if consent choice already exists
+    const consentChoice = localStorage.getItem('cookie_consent');
+    
+    if (consentChoice) {
+        // Remove popup immediately if choice already made
+        popup.remove();
+        
+        // Load analytics if user previously accepted
+        if (consentChoice === 'accepted') {
+            loadAnalytics();
+        }
+        return;
+    }
+    
+    // Show popup only if no choice has been made
+    popup.style.display = 'block';
+    
+    // Accept button handler
+    document.getElementById('cookie-accept').addEventListener('click', function() {
+        const timestamp = new Date().toISOString();
+        localStorage.setItem('cookie_consent', 'accepted');
+        localStorage.setItem('cookie_consent_timestamp', timestamp);
+        
+        // Completely remove popup from DOM
+        popup.remove();
+        
+        // Load analytics scripts
+        loadAnalytics();
+    });
+    
+    // Decline button handler
+    document.getElementById('cookie-decline').addEventListener('click', function() {
+        const timestamp = new Date().toISOString();
+        localStorage.setItem('cookie_consent', 'declined');
+        localStorage.setItem('cookie_consent_timestamp', timestamp);
+        
+        // Completely remove popup from DOM
+        popup.remove();
+    });
+});
+</script>
+<div style="flex: 1;">
+<header>
+<div style="background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%); padding: 1rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light" style="background: transparent; padding: 0;">
+<a class="navbar-brand" href="/" style="display: flex; align-items: center;">
+<img alt="Speed Up - macOS optimization and performance solutions logo" src="images/image_0_index.png" style="max-height: 64px; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease;"/>
+</a>
+<button aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#mainNavigation" data-toggle="collapse" style="border: 2px solid #FFFFFF; background: #FFFFFF; border-radius: 8px;" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav" style="gap: 0.5rem;">
+<li class="nav-item">
+<a class="nav-link" href="/" style="color: #FFFFFF; font-weight: 600; font-size: 1.1rem; padding: 0.75rem 1.25rem; border-radius: 8px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="services.html" style="color: #FFFFFF; font-weight: 600; font-size: 1.1rem; padding: 0.75rem 1.25rem; border-radius: 8px; transition: all 0.3s ease;">Services</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="terms.html" style="color: #FFFFFF; font-weight: 600; font-size: 1.1rem; padding: 0.75rem 1.25rem; border-radius: 8px; transition: all 0.3s ease;">Terms</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contacts.html" style="color: #FFFFFF; font-weight: 600; font-size: 1.1rem; padding: 0.75rem 1.25rem; border-radius: 8px; transition: all 0.3s ease;">Contacts</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="privacy_policy.html" style="color: #FFFFFF; font-weight: 600; font-size: 1.1rem; padding: 0.75rem 1.25rem; border-radius: 8px; transition: all 0.3s ease;">Privacy Policy</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<style>
+    .navbar-brand img:hover {
+        transform: scale(1.05);
+    }
+    
+    .nav-link:hover {
+        background: rgba(255,255,255,0.2) !important;
+        transform: translateY(-2px);
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5);
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background: rgba(255,255,255,0.95);
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .navbar-nav {
+            gap: 0.25rem !important;
+        }
+        
+        .nav-link {
+            color: #1a1a1a !important;
+            background: transparent !important;
+        }
+        
+        .nav-link:hover {
+            background: rgba(78,205,196,0.2) !important;
+        }
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</header>
+<style>
+/* Universal Image Constraints */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Team/People Images */
+.team-image, .person-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* Image Gallery Container */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery img {
+    flex: 0 1 calc(33.333% - 10px);
+    max-width: 300px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Service Cards */
+.service-card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    border-color: #FF6B6B;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+}
+
+.service-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 1.1rem;
+    color: #5A6C7D;
+    line-height: 1.6;
+}
+
+/* CTA Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-primary {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    color: #FFFFFF;
+}
+
+.cta-primary:hover {
+    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+    color: #FFFFFF;
+}
+
+.cta-secondary {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+    color: #FFFFFF;
+}
+
+.cta-secondary:hover {
+    background: linear-gradient(135deg, #44A08D 0%, #4ECDC4 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78,205,196,0.4);
+    color: #FFFFFF;
+}
+
+.cta-tertiary {
+    background: linear-gradient(135deg, #FFD93D 0%, #FFA500 100%);
+    color: #2C3E50;
+}
+
+.cta-tertiary:hover {
+    background: linear-gradient(135deg, #FFA500 0%, #FFD93D 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,217,61,0.4);
+    color: #2C3E50;
+}
+
+/* Features Section */
+.features-section {
+    background: #F8F9FA;
+    padding: 60px 0;
+}
+
+.feature-box {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-left: 5px solid #FF6B6B;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    border-left-color: #4ECDC4;
+    transform: translateX(5px);
+}
+
+.feature-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.feature-text {
+    font-size: 1rem;
+    color: #5A6C7D;
+    line-height: 1.6;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: #5A6C7D;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: #FF6B6B;
+}
+
+.modal-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    font-size: 1.1rem;
+    color: #5A6C7D;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+    padding: 60px 0;
+    color: #FFFFFF;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+    
+    .image-gallery img {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+    
+    .team-image, .person-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .service-title {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .modal-content {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+}
+</style>
+<div class="hero-section">
+<div class="container">
+<div class="row align-items-center hero-content">
+<div class="col-lg-6">
+<h1 class="hero-title">Accelerate Your Mac Performance</h1>
+<p class="hero-subtitle">Expert macOS optimization solutions for developers and professionals who demand peak performance</p>
+<div class="mt-4">
+<a class="cta-button cta-primary" href="services.html">Explore Our Services</a>
+<a class="cta-button cta-secondary" href="contacts.html">Get Started Today</a>
+<button class="cta-button cta-tertiary" onclick="openModal('performance')">Learn More</button>
+</div>
+</div>
+<div class="col-lg-6 text-center mt-4 mt-lg-0">
+<img alt="Modern macOS performance dashboard showing system optimization metrics, CPU usage graphs, memory management tools, and speed enhancement indicators on a sleek Mac interface with vibrant blue and teal gradients" src="images/image_1_index.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="container my-5">
+<div class="row">
+<div class="col-12 text-center mb-5">
+<h2 style="font-size: 2.5rem; font-weight: 700; color: #2C3E50;">Transform Your Mac Experience</h2>
+<p style="font-size: 1.2rem; color: #5A6C7D; max-width: 800px; margin: 20px auto;">At Apex Digital Solutions, we specialize in comprehensive macOS optimization services that eliminate slow boot times and enhance system performance for development professionals.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-rocket"></i>
+</div>
+<h3 class="service-title">Boot Time Optimization</h3>
+<p class="service-description">Eliminate frustrating slow boot times with our advanced system analysis and optimization techniques. We identify and resolve startup bottlenecks to get you working faster.</p>
+<button class="cta-button cta-primary mt-3" onclick="openModal('boot')" style="font-size: 0.9rem; padding: 10px 25px;">View Details</button>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-code"></i>
+</div>
+<h3 class="service-title">Development Environment Setup</h3>
+<p class="service-description">Custom configuration of your Mac for optimal software development. We streamline your programming workflow with tailored system settings and application optimization.</p>
+<button class="cta-button cta-primary mt-3" onclick="openModal('dev')" style="font-size: 0.9rem; padding: 10px 25px;">View Details</button>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-cogs"></i>
+</div>
+<h3 class="service-title">System Integration</h3>
+<p class="service-description">Seamless integration of development tools, applications, and workflows. We ensure all your software works harmoniously for maximum productivity and efficiency.</p>
+<button class="cta-button cta-primary mt-3" onclick="openModal('integration')" style="font-size: 0.9rem; padding: 10px 25px;">View Details</button>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-tachometer-alt"></i>
+</div>
+<h3 class="service-title">Performance Monitoring</h3>
+<p class="service-description">Continuous system performance tracking and proactive optimization. We implement monitoring solutions that keep your Mac running at peak efficiency.</p>
+<button class="cta-button cta-primary mt-3" onclick="openModal('monitoring')" style="font-size: 0.9rem; padding: 10px 25px;">View Details</button>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-mobile-alt"></i>
+</div>
+<h3 class="service-title">Mobile App Development Support</h3>
+<p class="service-description">Optimize your Mac for iOS and mobile application development. We configure Xcode, simulators, and development tools for smooth mobile programming.</p>
+<button class="cta-button cta-primary mt-3" onclick="openModal('mobile')" style="font-size: 0.9rem; padding: 10px 25px;">View Details</button>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-headset"></i>
+</div>
+<h3 class="service-title">Technical Support</h3>
+<p class="service-description">Expert IT support for all your macOS needs. Our team provides ongoing assistance to ensure your system remains optimized and your workflow uninterrupted.</p>
+<a class="cta-button cta-primary mt-3" href="contacts.html" style="font-size: 0.9rem; padding: 10px 25px;">Contact Support</a>
+</div>
+</div>
+</div>
+</div>
+<div class="stats-section">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-6">
+<div class="stat-box">
+<div class="stat-number" data-target="2500">0</div>
+<div class="stat-label">Macs Optimized</div>
+</div>
+</div>
+<div class="col-md-3 col-6">
+<div class="stat-box">
+<div class="stat-number" data-target="85">0</div>
+<div class="stat-label">Average Speed Increase %</div>
+</div>
+</div>
+<div class="col-md-3 col-6">
+<div class="stat-box">
+<div class="stat-number" data-target="98">0</div>
+<div class="stat-label">Client Satisfaction %</div>
+</div>
+</div>
+<div class="col-md-3 col-6">
+<div class="stat-box">
+<div class="stat-number" data-target="15">0</div>
+<div class="stat-label">Years Experience</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="features-section">
+<div class="container">
+<div class="row">
+<div class="col-12 text-center mb-5">
+<h2 style="font-size: 2.5rem; font-weight: 700; color: #2C3E50;">Why Choose Apex Digital Solutions?</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="feature-box">
+<h4 class="feature-title"><i class="fas fa-check-circle" style="color: #4ECDC4; margin-right: 10px;"></i>Expert Technical Team</h4>
+<p class="feature-text">Our certified professionals have extensive experience in macOS optimization and software development, ensuring your system receives the highest quality service.</p>
+</div>
+<div class="feature-box">
+<h4 class="feature-title"><i class="fas fa-check-circle" style="color: #4ECDC4; margin-right: 10px;"></i>Custom Solutions</h4>
+<p class="feature-text">We understand that every developer has unique needs. Our tailored approach ensures your Mac is optimized specifically for your programming workflow and applications.</p>
+</div>
+<div class="feature-box">
+<h4 class="feature-title"><i class="fas fa-check-circle" style="color: #4ECDC4; margin-right: 10px;"></i>Proven Results</h4>
+<p class="feature-text">With thousands of successful optimizations, we have a track record of dramatically improving Mac performance and eliminating slow boot issues.</p>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="feature-box">
+<h4 class="feature-title"><i class="fas fa-check-circle" style="color: #4ECDC4; margin-right: 10px;"></i>Comprehensive Analysis</h4>
+<p class="feature-text">We perform thorough system diagnostics to identify performance bottlenecks, unnecessary processes, and optimization opportunities specific to your Mac.</p>
+</div>
+<div class="feature-box">
+<h4 class="feature-title"><i class="fas fa-check-circle" style="color: #4ECDC4; margin-right: 10px;"></i>Ongoing Support</h4>
+<p class="feature-text">Our relationship doesn't end after optimization. We provide continuous technical support to ensure your Mac maintains peak performance over time.</p>
+</div>
+<div class="feature-box">
+<h4 class="feature-title"><i class="fas fa-check-circle" style="color: #4ECDC4; margin-right: 10px;"></i>Developer-Focused</h4>
+<p class="feature-text">We specialize in optimizing Macs for software development, web development, and IT professionals who need reliable, high-performance systems.</p>
+</div>
+</div>
+</div>
+<div class="row mt-4">
+<div class="col-12 text-center">
+<a class="cta-button cta-primary" href="services.html">View All Services</a>
+<a class="cta-button cta-secondary" href="contacts.html">Schedule Consultation</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-overlay" id="performanceModal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal('performance')">×</button>
+<h3 class="modal-title">Mac Performance Optimization</h3>
+<p class="modal-text">Our comprehensive performance optimization service addresses all aspects of your Mac's operation. We analyze system resources, identify memory leaks, optimize storage usage, and configure system settings for maximum efficiency.</p>
+<p class="modal-text">Our process includes detailed diagnostics of CPU usage patterns, RAM allocation, disk I/O performance, and application behavior. We remove unnecessary startup items, clean system caches, and optimize file system structures.</p>
+<p class="modal-text">For developers, we ensure that resource-intensive applications like IDEs, compilers, and virtual machines run smoothly without system slowdowns. Our optimization techniques can reduce boot times by up to 70% and improve overall system responsiveness significantly.</p>
+<a class="cta-button cta-primary mt-3" href="contacts.html">Get Started</a>
+</div>
+</div>
+<div class="modal-overlay" id="bootModal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal('boot')">×</button>
+<h3 class="modal-title">Boot Time Optimization</h3>
+<p class="modal-text">Slow boot times can significantly impact productivity. Our boot optimization service identifies and eliminates startup delays through systematic analysis of launch agents, login items, and kernel extensions.</p>
+<p class="modal-text">We examine every component that loads during startup, from system services to third-party applications. Our experts disable unnecessary startup processes, optimize disk access patterns, and configure system preferences for faster boot sequences.</p>
+<p class="modal-text">The result is a Mac that starts quickly and is ready for work in seconds rather than minutes. We've helped developers reduce boot times from several minutes to under 30 seconds, allowing them to restart their systems without productivity loss.</p>
+<a class="cta-button cta-secondary mt-3" href="services.html">Learn More</a>
+</div>
+</div>
+<div class="modal-overlay" id="devModal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal('dev')">×</button>
+<h3 class="modal-title">Development Environment Setup</h3>
+<p class="modal-text">A properly configured development environment is essential for efficient programming. We set up and optimize your Mac for software development with custom configurations tailored to your specific programming languages and frameworks.</p>
+<p class="modal-text">Our service includes installation and configuration of development tools, version control systems, package managers, and build tools. We optimize compiler settings, configure IDE preferences, and set up efficient workflows for code development and testing.</p>
+<p class="modal-text">Whether you're working with web development frameworks, mobile app development tools, or system programming languages, we ensure your Mac is configured for optimal performance and productivity in your specific development domain.</p>
+<a class="cta-button cta-primary mt-3" href="contacts.html">Contact Us</a>
+</div>
+</div>
+<div class="modal-overlay" id="integrationModal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal('integration')">×</button>
+<h3 class="modal-title">System Integration Services</h3>
+<p class="modal-text">Seamless integration of development tools and applications is crucial for efficient workflows. Our system integration service ensures all your software components work together harmoniously.</p>
+<p class="modal-text">We configure API connections, set up automated workflows, integrate version control with IDEs, and establish continuous integration pipelines. Our experts ensure that your development tools, testing frameworks, and deployment systems communicate effectively.</p>
+<p class="modal-text">From database connections to cloud service integrations, we handle the technical complexity so you can focus on writing code. Our integration solutions reduce friction in your development process and improve overall productivity.</p>
+<a class="cta-button cta-secondary mt-3" href="services.html">View Services</a>
+</div>
+</div>
+<div class="modal-overlay" id="monitoringModal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal('monitoring')">×</button>
+<h3 class="modal-title">Performance Monitoring Solutions</h3>
+<p class="modal-text">Continuous monitoring ensures your Mac maintains optimal performance over time. We implement comprehensive monitoring solutions that track system health, resource usage, and application performance.</p>
+<p class="modal-text">Our monitoring tools provide real-time insights into CPU usage, memory consumption, disk activity, and network performance. We set up alerts for potential issues and implement automated optimization routines that keep your system running smoothly.</p>
+<p class="modal-text">For development teams, we offer monitoring solutions that track build times, test execution performance, and deployment metrics. This data-driven approach allows us to continuously refine and improve your Mac's performance.</p>
+<a class="cta-button cta-primary mt-3" href="contacts.html">Get Monitoring</a>
+</div>
+</div>
+<div class="modal-overlay" id="mobileModal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal('mobile')">×</button>
+<h3 class="modal-title">Mobile App Development Support</h3>
+<p class="modal-text">Mobile application development requires specific system configurations and optimizations. We specialize in setting up Macs for iOS and cross-platform mobile development.</p>
+<p class="modal-text">Our service includes Xcode optimization, simulator configuration, provisioning profile management, and build system tuning. We ensure your Mac can handle multiple simulator instances, large project builds, and intensive testing workflows without performance degradation.</p>
+<p class="modal-text">We also optimize for popular mobile development frameworks and tools, ensuring smooth operation whether you're building native iOS apps, React Native applications, or Flutter projects. Our configurations reduce build times and improve development iteration speed.</p>
+<a class="cta-button cta-secondary mt-3" href="services.html">Explore Options</a>
+</div>
+</div>
+<script>
+function openModal(modalType) {
+    const modalId = modalType + 'Modal';
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeModal(modalType) {
+    const modalId = modalType + 'Modal';
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+document.querySelectorAll('.modal-overlay').forEach(modal => {
+    modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+            this.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+
+function animateStats() {
+    const stats = document.querySelectorAll('.stat-number');
+    
+    stats.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                stat.textContent = target + (stat.parentElement.querySelector('.stat-label').textContent.includes('%') ? '%' : '');
+                clearInterval(timer);
+            } else {
+                stat.textContent = Math.floor(current) + (stat.parentElement.querySelector('.stat-label').textContent.includes('%') ? '%' : '');
+            }
+        }, 16);
+    });
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateStats();
+            observer.disconnect();
+        }
+    });
+}, { threshold: 0.5 });
+
+const statsSection = document.querySelector('.stats-section');
+if (statsSection) {
+    observer.observe(statsSection);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 50);
+        }, index * 100);
+    });
+});
+</script>
+<div class="container my-5">
+<div class="row g-4">
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="Modern Mac desktop showing multiple application windows arranged in an organized grid layout with the new window snapping feature, demonstrating improved multitasking capabilities on macOS with colorful app interfaces and Mission Control overview" class="card-img-top" src="images/image_2_index.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1.5rem;">
+<h5 class="card-title fw-bold mb-3" style="font-size: 1.3rem;">Enhanced Window Management</h5>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Apple's latest macOS update introduces improved window snapping and organization tools that streamline multitasking workflows.</p>
+<div class="d-flex justify-content-between align-items-center">
+<small style="opacity: 0.9;">March 15, 2026</small>
+<a class="btn btn-light fw-bold px-4 py-2" href="news_1.html" style="border-radius: 25px; transition: all 0.3s ease;">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="Mac screen displaying various built-in macOS applications including Spotlight search interface, Automator workflow editor, Preview app with annotation tools, and keyboard shortcuts overlay, showcasing native productivity features without third-party software" class="card-img-top" src="images/image_3_index.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 1.5rem;">
+<h5 class="card-title fw-bold mb-3" style="font-size: 1.3rem;">Built-in Productivity Features</h5>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Discover the built-in macOS applications and features that can transform your daily workflow without requiring third-party software.</p>
+<div class="d-flex justify-content-between align-items-center">
+<small style="opacity: 0.9;">February 28, 2026</small>
+<a class="btn btn-light fw-bold px-4 py-2" href="news_2.html" style="border-radius: 25px; transition: all 0.3s ease;">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="macOS Storage Management interface showing colorful pie chart of disk space usage, iCloud optimization settings, system files breakdown, and storage recommendations with clean modern design and vibrant data visualization" class="card-img-top" src="images/image_4_index.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 1.5rem;">
+<h5 class="card-title fw-bold mb-3" style="font-size: 1.3rem;">Smart Storage Optimization</h5>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Learn effective strategies for managing disk space on your Mac through Apple's built-in storage optimization features.</p>
+<div class="d-flex justify-content-between align-items-center">
+<small style="opacity: 0.9;">January 22, 2026</small>
+<a class="btn btn-light fw-bold px-4 py-2" href="news_3.html" style="border-radius: 25px; transition: all 0.3s ease;">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .btn-light:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-8px)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    });
+    
+    const buttons = document.querySelectorAll('.btn-light');
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1.05)';
+        }, 100);
+      });
+    });
+  });
+</script>
+</div>
+<footer style="width: 100%; z-index: 1000;">
+<div style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); color: #ffffff; padding: 60px 0 0 0; margin-top: 80px; position: relative; overflow: hidden;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #ff1744 0%, #ff4081 50%, #ff1744 100%); background-size: 200% 100%; animation: gradientShift 3s ease infinite;"></div>
+<div class="container">
+<div class="row g-4 mb-5">
+<div class="col-lg-4 col-md-6">
+<div class="footer-card" style="background: rgba(255, 23, 68, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(255, 23, 68, 0.3); transition: all 0.3s ease; height: 100%;">
+<h4 style="color: #ff1744; font-weight: 700; margin-bottom: 20px; font-size: 1.3rem;">Speed Up</h4>
+<p style="color: #e0e0e0; line-height: 1.8; margin-bottom: 20px;">Optimizing macOS performance through expert software development and technical solutions. Making your Mac work faster and smarter.</p>
+<div style="display: flex; gap: 15px; margin-top: 25px;">
+<a class="social-icon" href="#" style="width: 45px; height: 45px; background: linear-gradient(135deg, #ff1744, #ff4081); border-radius: 12px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);">
+<i class="fab fa-facebook-f" style="color: #ffffff; font-size: 1.2rem;"></i>
+</a>
+<a class="social-icon" href="#" style="width: 45px; height: 45px; background: linear-gradient(135deg, #ff1744, #ff4081); border-radius: 12px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);">
+<i class="fab fa-twitter" style="color: #ffffff; font-size: 1.2rem;"></i>
+</a>
+<a class="social-icon" href="#" style="width: 45px; height: 45px; background: linear-gradient(135deg, #ff1744, #ff4081); border-radius: 12px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);">
+<i class="fab fa-linkedin-in" style="color: #ffffff; font-size: 1.2rem;"></i>
+</a>
+<a class="social-icon" href="#" style="width: 45px; height: 45px; background: linear-gradient(135deg, #ff1744, #ff4081); border-radius: 12px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);">
+<i class="fab fa-github" style="color: #ffffff; font-size: 1.2rem;"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="footer-card" style="background: rgba(255, 64, 129, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(255, 64, 129, 0.3); transition: all 0.3s ease; height: 100%;">
+<h4 style="color: #ff4081; font-weight: 700; margin-bottom: 20px; font-size: 1.3rem;">Quick Links</h4>
+<nav style="display: flex; flex-direction: column; gap: 12px;">
+<a class="footer-link" href="/" style="color: #e0e0e0; text-decoration: none; transition: all 0.3s ease; padding: 8px 0; border-left: 3px solid transparent; padding-left: 15px; font-weight: 500;">
+<i class="fas fa-home" style="margin-right: 10px; color: #ff1744;"></i>Home
+                        </a>
+<a class="footer-link" href="services.html" style="color: #e0e0e0; text-decoration: none; transition: all 0.3s ease; padding: 8px 0; border-left: 3px solid transparent; padding-left: 15px; font-weight: 500;">
+<i class="fas fa-cogs" style="margin-right: 10px; color: #ff1744;"></i>Services
+                        </a>
+<a class="footer-link" href="contacts.html" style="color: #e0e0e0; text-decoration: none; transition: all 0.3s ease; padding: 8px 0; border-left: 3px solid transparent; padding-left: 15px; font-weight: 500;">
+<i class="fas fa-envelope" style="margin-right: 10px; color: #ff1744;"></i>Contacts
+                        </a>
+<a class="footer-link" href="privacy_policy.html" style="color: #e0e0e0; text-decoration: none; transition: all 0.3s ease; padding: 8px 0; border-left: 3px solid transparent; padding-left: 15px; font-weight: 500;">
+<i class="fas fa-shield-alt" style="margin-right: 10px; color: #ff1744;"></i>Privacy Policy
+                        </a>
+<a class="footer-link" href="terms.html" style="color: #e0e0e0; text-decoration: none; transition: all 0.3s ease; padding: 8px 0; border-left: 3px solid transparent; padding-left: 15px; font-weight: 500;">
+<i class="fas fa-file-contract" style="margin-right: 10px; color: #ff1744;"></i>Terms of Service</a>
+</nav>
+</div>
+</div>
+<div class="col-lg-4 col-md-12">
+<div class="footer-card" style="background: rgba(255, 23, 68, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(255, 23, 68, 0.3); transition: all 0.3s ease; height: 100%;">
+<h4 style="color: #ff1744; font-weight: 700; margin-bottom: 20px; font-size: 1.3rem;">Contact Us</h4>
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<div style="display: flex; align-items: start; gap: 15px;">
+<div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ff1744, #ff4081); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+<i class="fas fa-building" style="color: #ffffff; font-size: 1rem;"></i>
+</div>
+<div>
+<p style="color: #b0b0b0; margin: 0; font-size: 0.85rem; font-weight: 600;">Company</p>
+<p style="color: #ffffff; margin: 0; font-weight: 500;">Apex Digital Solutions</p>
+</div>
+</div>
+<div style="display: flex; align-items: start; gap: 15px;">
+<div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ff1744, #ff4081); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+<i class="fas fa-map-marker-alt" style="color: #ffffff; font-size: 1rem;"></i>
+</div>
+<div>
+<p style="color: #b0b0b0; margin: 0; font-size: 0.85rem; font-weight: 600;">Address</p>
+<p style="color: #ffffff; margin: 0; font-weight: 500;">1400 N Dallas Pkwy Suite 300<br/>Plano, 75074, USA</p>
+</div>
+</div>
+<div style="display: flex; align-items: start; gap: 15px;">
+<div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ff1744, #ff4081); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+<i class="fas fa-phone-alt" style="color: #ffffff; font-size: 1rem;"></i>
+</div>
+<div>
+<p style="color: #b0b0b0; margin: 0; font-size: 0.85rem; font-weight: 600;">Phone</p>
+<a href="tel:+19727352200" style="color: #ffffff; text-decoration: none; font-weight: 500; transition: color 0.3s ease;">(972) 735-2200</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row mb-5">
+<div class="col-12">
+<div style="background: linear-gradient(135deg, rgba(255, 23, 68, 0.15), rgba(255, 64, 129, 0.15)); padding: 40px; border-radius: 20px; border: 2px solid rgba(255, 23, 68, 0.4); position: relative; overflow: hidden;">
+<div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(255, 23, 68, 0.2), transparent); border-radius: 50%;"></div>
+<div style="position: absolute; bottom: -30px; left: -30px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(255, 64, 129, 0.2), transparent); border-radius: 50%;"></div>
+<div style="position: relative; z-index: 2;">
+<h4 style="color: #ffffff; font-weight: 700; margin-bottom: 15px; font-size: 1.5rem; text-align: center;">Stay Updated</h4>
+<p style="color: #e0e0e0; text-align: center; margin-bottom: 30px; font-size: 1rem;">Subscribe to our newsletter for the latest macOS optimization tips and software development insights</p>
+<form id="newsletterForm" style="max-width: 600px; margin: 0 auto;">
+<div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+<div style="flex: 1; min-width: 280px; position: relative;">
+<input id="newsletterEmail" placeholder="Enter your email address" required="" style="width: 100%; padding: 16px 20px; border: 2px solid rgba(255, 255, 255, 0.2); border-radius: 12px; background: rgba(255, 255, 255, 0.1); color: #ffffff; font-size: 1rem; transition: all 0.3s ease; outline: none;" type="email"/>
+<div id="emailError" style="display: none; color: #ff1744; font-size: 0.85rem; margin-top: 8px; font-weight: 500;"></div>
+</div>
+<button id="subscribeBtn" style="padding: 16px 40px; background: linear-gradient(135deg, #ff1744, #ff4081); color: #ffffff; border: none; border-radius: 12px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(255, 23, 68, 0.4); white-space: nowrap;" type="submit">
+<i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Subscribe
+                                </button>
+</div>
+</form>
+<div id="successMessage" style="display: none; margin-top: 25px; padding: 20px; background: rgba(76, 175, 80, 0.2); border: 2px solid #4caf50; border-radius: 12px; text-align: center; animation: slideDown 0.5s ease;">
+<i class="fas fa-check-circle" style="color: #4caf50; font-size: 2.5rem; margin-bottom: 10px; animation: scaleIn 0.5s ease;"></i>
+<p style="color: #4caf50; font-weight: 700; font-size: 1.1rem; margin: 0;">Successfully Subscribed!</p>
+<p style="color: #e0e0e0; margin: 8px 0 0 0; font-size: 0.95rem;">Thank you for joining our community. Check your inbox for confirmation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="border-top: 2px solid rgba(255, 23, 68, 0.3); padding: 30px 0;">
+<div class="row align-items-center">
+<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+<p style="color: #b0b0b0; margin: 0; font-size: 0.95rem;">© 2026 Apex Digital Solutions. All rights reserved.</p>
+</div>
+<div class="col-md-6 text-center text-md-end">
+<p style="color: #b0b0b0; margin: 0; font-size: 0.95rem;">Crafted with <i class="fas fa-heart" style="color: #ff1744; animation: heartbeat 1.5s ease infinite;"></i>for macOS enthusiasts</p>
+</div>
+</div>
+</div>
+</div>
+<style>
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+        }
+
+        .footer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 23, 68, 0.3);
+        }
+
+        .footer-link:hover {
+            color: #ff1744 !important;
+            border-left-color: #ff1744 !important;
+            padding-left: 20px !important;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 8px 25px rgba(255, 23, 68, 0.5);
+        }
+
+        #newsletterEmail:focus {
+            border-color: #ff1744;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 20px rgba(255, 23, 68, 0.3);
+        }
+
+        #subscribeBtn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 23, 68, 0.6);
+        }
+
+        #subscribeBtn:active {
+            transform: translateY(0);
+        }
+
+        #subscribeBtn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            .footer-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const emailInput = document.getElementById('newsletterEmail');
+            const emailError = document.getElementById('emailError');
+            const subscribeBtn = document.getElementById('subscribeBtn');
+            const successMessage = document.getElementById('successMessage');
+            const email = emailInput.value.trim();
+            
+            emailError.style.display = 'none';
+            emailError.textContent = '';
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                emailError.textContent = 'Please enter a valid email address';
+                emailError.style.display = 'block';
+                emailInput.style.borderColor = '#ff1744';
+                emailInput.style.animation = 'shake 0.5s';
+                setTimeout(() => {
+                    emailInput.style.animation = '';
+                }, 500);
+                return;
+            }
+            
+            const submittedEmails = JSON.parse(localStorage.getItem('subscribedEmails') || '[]');
+            if (submittedEmails.includes(email)) {
+                emailError.textContent = 'This email is already subscribed to our newsletter';
+                emailError.style.display = 'block';
+                emailInput.style.borderColor = '#ff1744';
+                return;
+            }
+            
+            subscribeBtn.disabled = true;
+            subscribeBtn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 8px;"></i>Processing...';
+            
+            setTimeout(() => {
+                submittedEmails.push(email);
+                localStorage.setItem('subscribedEmails', JSON.stringify(submittedEmails));
+                
+                emailInput.value = '';
+                emailInput.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+                subscribeBtn.disabled = false;
+                subscribeBtn.innerHTML = '<i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Subscribe';
+                
+                successMessage.style.display = 'block';
+                
+                setTimeout(() => {
+                    successMessage.style.animation = 'slideDown 0.5s ease reverse';
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                        successMessage.style.animation = 'slideDown 0.5s ease';
+                    }, 500);
+                }, 5000);
+            }, 1500);
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-10px); }
+                75% { transform: translateX(10px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</div>
+</footer>
 </body>
 </html>

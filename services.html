@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light" style="background: transparent; padding: 0;">
 <a class="navbar-brand" href="/" style="display: flex; align-items: center;">
-<img alt="Speed Up - macOS optimization and performance solutions logo" src="images/image_0_contacts.png" style="max-height: 64px; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease;"/>
+<img alt="Speed Up - macOS optimization and performance solutions logo" src="images/image_0_services.png" style="max-height: 64px; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease;"/>
 </a>
 <button aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#mainNavigation" data-toggle="collapse" style="border: 2px solid #FFFFFF; background: #FFFFFF; border-radius: 8px;" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -391,8 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </header>
-<div class="row">
-<div class="col-md-6">
+<div style="margin-bottom: 50px;">
 <style>
 /* Universal Image Constraints */
 img {
@@ -405,240 +404,215 @@ img {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.contact-container {
-    padding: 60px 30px;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+/* Heading Section Styles */
+.services-heading-section {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-card {
+.services-heading-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.heading-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.heading-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
     background: #FFFFFF;
-    border-radius: 24px;
-    padding: 50px 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
-}
-
-.contact-title {
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: #2D2D2D;
-    margin-bottom: 15px;
-    letter-spacing: -0.5px;
-}
-
-.contact-subtitle {
-    font-size: 1.2rem;
-    color: #666666;
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-.contact-info-item {
-    background: #F8F9FA;
-    border-radius: 16px;
-    padding: 25px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    border-left: 5px solid #FF6B9D;
-}
-
-.contact-info-item:hover {
-    background: #FFF5F8;
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(255,107,157,0.2);
-}
-
-.contact-icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    border-radius: 12px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
 
-.contact-info-item:hover .contact-icon {
-    transform: rotate(5deg) scale(1.1);
+.heading-icon:hover {
+    transform: translateY(-5px);
 }
 
-.contact-icon i {
+.heading-icon i {
+    font-size: 40px;
+    color: #FF6B6B;
+}
+
+.services-main-title {
+    font-size: 48px;
+    font-weight: 800;
     color: #FFFFFF;
-    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    line-height: 1.2;
 }
 
-.contact-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #999999;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.contact-value {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #2D2D2D;
+.services-subtitle {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    font-weight: 500;
     line-height: 1.6;
 }
 
-.contact-value a {
-    color: #2D2D2D;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-value a:hover {
-    color: #FF6B9D;
-}
-
-.map-container {
-    margin-top: 40px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.map-container img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.office-hours {
-    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
+.services-description {
+    font-size: 16px;
     color: #FFFFFF;
-}
-
-.office-hours h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.hours-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.hours-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-}
-
-.hours-list li:last-child {
-    border-bottom: none;
-}
-
-.day {
-    font-weight: 600;
-}
-
-.time {
-    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 35px;
     opacity: 0.9;
+    line-height: 1.7;
 }
 
-.cta-section {
-    background: #FFF5F8;
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
+.services-cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary-custom {
+    background: #FFFFFF;
+    color: #FF6B6B;
+    padding: 14px 32px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background: #FFF5F5;
+    color: #FF6B6B;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    text-decoration: none;
+}
+
+.btn-secondary-custom {
+    background: transparent;
+    color: #FFFFFF;
+    padding: 14px 32px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid #FFFFFF;
+}
+
+.btn-secondary-custom:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.services-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
     text-align: center;
 }
 
-.cta-section h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #2D2D2D;
-    margin-bottom: 15px;
-}
-
-.cta-section p {
-    color: #666666;
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-}
-
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
+.stat-number {
+    font-size: 36px;
+    font-weight: 800;
     color: #FFFFFF;
-    padding: 15px 40px;
-    border-radius: 50px;
-    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.9;
     font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255,107,157,0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255,107,157,0.4);
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .contact-container {
-        padding: 40px 20px;
+    .services-heading-section {
+        padding: 60px 20px;
     }
     
-    .contact-card {
-        padding: 30px 25px;
-        border-radius: 16px;
+    .heading-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
     }
     
-    .contact-title {
-        font-size: 2rem;
+    .heading-icon i {
+        font-size: 30px;
     }
     
-    .contact-subtitle {
-        font-size: 1rem;
+    .services-main-title {
+        font-size: 36px;
+        margin-bottom: 15px;
     }
     
-    .contact-info-item {
-        padding: 20px;
+    .services-subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
     
-    .contact-value {
-        font-size: 1rem;
+    .services-description {
+        font-size: 15px;
+        margin-bottom: 25px;
     }
     
-    .map-container img {
-        height: 200px;
+    .services-cta-buttons {
+        flex-direction: column;
+        align-items: center;
     }
     
-    .office-hours {
-        padding: 20px;
+    .btn-primary-custom,
+    .btn-secondary-custom {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 24px;
+        font-size: 15px;
     }
     
-    .cta-section {
-        padding: 20px;
+    .services-stats {
+        gap: 30px;
+        margin-top: 40px;
     }
     
-    .cta-section h3 {
-        font-size: 1.4rem;
+    .stat-number {
+        font-size: 28px;
+    }
+    
+    .stat-label {
+        font-size: 12px;
     }
     
     img {
@@ -648,201 +622,145 @@ img {
 }
 
 @media (max-width: 480px) {
-    .contact-title {
-        font-size: 1.6rem;
+    .services-heading-section {
+        padding: 50px 15px;
     }
     
-    .contact-icon {
-        width: 40px;
-        height: 40px;
+    .services-main-title {
+        font-size: 28px;
     }
     
-    .contact-icon i {
-        font-size: 1.2rem;
+    .services-subtitle {
+        font-size: 16px;
     }
     
-    .hours-list li {
-        font-size: 0.9rem;
+    .services-description {
+        font-size: 14px;
+    }
+    
+    .services-stats {
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 24px;
     }
 }
 </style>
-<div class="contact-container">
-<div class="container">
-<div class="contact-card">
-<h1 class="contact-title">Get in Touch</h1>
-<p class="contact-subtitle">We're here to help you optimize your macOS experience and boost your Mac's performance. Reach out to our expert team for technical support and custom software solutions.</p>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-building"></i>
+<div class="services-heading-section">
+<div class="heading-container">
+<div class="heading-icon">
+<i class="fas fa-code"></i>
 </div>
-<div class="contact-label">Company</div>
-<div class="contact-value">Apex Digital Solutions</div>
+<h1 class="services-main-title">Our Development Services</h1>
+<p class="services-subtitle">Expert Software Solutions Tailored to Your Business Needs</p>
+<p class="services-description">At Apex Digital Solutions, we deliver cutting-edge software development services that transform your ideas into powerful applications. Our team of experienced developers specializes in custom programming, mobile apps, web development, and system integration to help your business thrive in the digital landscape.</p>
+<div class="services-cta-buttons">
+<a class="btn-primary-custom" href="contacts.html">Get Started Today</a>
+<a class="btn-secondary-custom" href="/">Learn More</a>
 </div>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-map-marker-alt"></i>
+<div class="services-stats">
+<div class="stat-item">
+<span class="stat-number">500+</span>
+<span class="stat-label">Projects Delivered</span>
 </div>
-<div class="contact-label">Address</div>
-<div class="contact-value">1400 N Dallas Pkwy Suite 300<br/>Plano, TX 75074<br/>
-                    United States
-                </div>
+<div class="stat-item">
+<span class="stat-number">98%</span>
+<span class="stat-label">Client Satisfaction</span>
 </div>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-phone"></i>
-</div>
-<div class="contact-label">Phone</div>
-<div class="contact-value">
-<a href="tel:+19727352200">(972) 735-2200</a>
-</div>
-</div>
-<div class="map-container">
-<img alt="Map showing Apex Digital Solutions office location at 1400 N Dallas Parkway Suite 300 in Plano, Texas, with surrounding streets and landmarks visible" src="images/image_1_contacts.png"/>
-</div>
-<div class="office-hours">
-<h3><i class="far fa-clock"></i> Office Hours</h3>
-<ul class="hours-list">
-<li>
-<span class="day">Monday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Tuesday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Wednesday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Thursday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Friday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Saturday</span>
-<span class="time">10:00 AM - 4:00 PM</span>
-</li>
-<li>
-<span class="day">Sunday</span>
-<span class="time">Closed</span>
-</li>
-</ul>
-</div>
-<div class="cta-section">
-<h3>Need Technical Support?</h3>
-<p>Our development team specializes in macOS optimization, custom software solutions, and system integration services.</p>
-<a class="cta-button" href="services.html">
-<i class="fas fa-code"></i>View Our Services</a>
+<div class="stat-item">
+<span class="stat-number">15+</span>
+<span class="stat-label">Years Experience</span>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-6">
-<div class="col-md-6 p-4">
-<div class="card shadow-sm" style="border-radius: 20px; border: none; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
-<div class="card-body p-5">
-<h2 class="mb-4" style="color: #1a1a1a; font-weight: 700; font-size: 2rem;">Get In Touch</h2>
-<p class="mb-4" style="color: #555; font-size: 1rem; line-height: 1.6;">Have questions about optimizing your Mac performance? Our development team is here to help you speed up your macOS system and improve your workflow.</p>
-<form class="needs-validation" id="contactForm" novalidate="">
-<div class="mb-4">
-<label class="form-label" for="nameInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Full Name</label>
-<input class="form-control" id="nameInput" required="" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; transition: all 0.3s ease;" type="text"/>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter your name.</div>
-</div>
-<div class="mb-4">
-<label class="form-label" for="emailInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Email Address</label>
-<input class="form-control" id="emailInput" required="" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; transition: all 0.3s ease;" type="email"/>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter a valid email address.</div>
-</div>
-<div class="mb-4">
-<label class="form-label" for="messageInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Message</label>
-<textarea class="form-control" id="messageInput" required="" rows="5" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; resize: vertical; transition: all 0.3s ease;"></textarea>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter your message.</div>
-</div>
-<div class="alert alert-success d-none" id="successMessage" role="alert" style="border-radius: 12px; border: none; background: linear-gradient(135deg, #00d084 0%, #00b872 100%); color: white; font-weight: 600; padding: 16px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 208, 132, 0.3);">
-<i class="fas fa-check-circle me-2"></i>Successfully sent!</div>
-<button class="btn btn-primary w-100" style="border-radius: 12px; padding: 14px 24px; font-size: 1.1rem; font-weight: 600; border: none; background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); transition: all 0.3s ease;" type="submit">
-<i class="fas fa-paper-plane me-2"></i>Send Message
-                </button>
-</form>
+<div class="container my-5">
+<div class="row g-4">
+<div class="col-lg-6">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="Professional technician performing comprehensive macOS system maintenance on a MacBook, checking system health indicators, organizing storage, and updating software in a clean modern workspace" class="card-img-top" src="images/image_1_services.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%); color: white; padding: 2rem;">
+<h3 class="card-title fw-bold mb-3" style="font-size: 1.5rem;">Professional System Maintenance</h3>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Keep your Mac running smoothly with comprehensive checkups, storage management, and system updates. We analyze system health, organize files efficiently, and maintain a well-functioning Mac environment for daily productivity.</p>
+<a class="btn btn-light fw-bold px-4 py-2 align-self-start" href="services_1.html" style="border-radius: 25px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn More</a>
 </div>
 </div>
 </div>
-<style>
-    .form-control:focus {
-        border-color: #007bff !important;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15) !important;
-        outline: none;
-    }
-    
-    .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
-    }
-    
-    .btn-primary:active {
-        transform: translateY(0);
-    }
-    
-    .card {
-        transition: all 0.3s ease;
-    }
-    
-    @media (max-width: 768px) {
-        .card-body {
-            padding: 2rem !important;
-        }
-        
-        h2 {
-            font-size: 1.75rem !important;
-        }
-    }
-</style>
+<div class="col-lg-6">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="Mac productivity consultant working with client to optimize workflow, showing efficient applications and automation tools on multiple Mac screens in modern office setting" class="card-img-top" src="images/image_2_services.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #4ECDC4 0%, #6FE0D8 100%); color: white; padding: 2rem;">
+<h3 class="card-title fw-bold mb-3" style="font-size: 1.5rem;">Workflow Consulting</h3>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Streamline your Mac workflow and enhance productivity with expert consulting. We assess your setup, recommend efficient applications, configure automation tools, and create custom workflows tailored to your specific needs.</p>
+<a class="btn btn-light fw-bold px-4 py-2 align-self-start" href="services_2.html" style="border-radius: 25px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="Professional instructor teaching macOS training session to group of students in modern classroom with multiple Macs, demonstrating advanced features and productivity techniques" class="card-img-top" src="images/image_3_services.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #FFD93D 0%, #FFE066 100%); color: #333; padding: 2rem;">
+<h3 class="card-title fw-bold mb-3" style="font-size: 1.5rem;">macOS Training Programs</h3>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Comprehensive training for individuals and teams transitioning to macOS or mastering advanced features. Hands-on sessions covering basic navigation to professional shortcuts, native apps, and productivity techniques. Available in-person or remotely.</p>
+<a class="btn btn-dark fw-bold px-4 py-2 align-self-start" href="services_3.html" style="border-radius: 25px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="Mac screen showing storage management interface with organized files, photo libraries being archived, and disk space analysis tools displaying reclaimed storage space" class="card-img-top" src="images/image_4_services.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #A78BFA 0%, #BFA3FF 100%); color: white; padding: 2rem;">
+<h3 class="card-title fw-bold mb-3" style="font-size: 1.5rem;">Storage Organization Service</h3>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Reclaim valuable disk space and organize your Mac storage effectively. We identify large files, manage photo and video libraries, archive old projects, and implement sustainable storage practices for a cleaner, more organized Mac.</p>
+<a class="btn btn-light fw-bold px-4 py-2 align-self-start" href="services_4.html" style="border-radius: 25px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card h-100 border-0 shadow-sm" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+<img alt="Brand new MacBook being professionally configured with essential applications, cloud services, and backup solutions in organized workspace with setup checklist visible" class="card-img-top" src="images/image_5_services.png" style="height: 250px; object-fit: cover;"/>
+<div class="card-body d-flex flex-column" style="background: linear-gradient(135deg, #F97316 0%, #FB923C 100%); color: white; padding: 2rem;">
+<h3 class="card-title fw-bold mb-3" style="font-size: 1.5rem;">Custom Mac Setup</h3>
+<p class="card-text mb-4" style="flex-grow: 1; line-height: 1.6;">Tailored setup service for new devices or fresh installations. We configure system preferences, install essential applications, set up cloud services, establish backup solutions, and create an optimized environment based on your workflow requirements.</p>
+<a class="btn btn-light fw-bold px-4 py-2 align-self-start" href="services_5.html" style="border-radius: 25px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        
-        const form = this;
-        const successMessage = document.getElementById('successMessage');
-        
-        if (form.checkValidity()) {
-            successMessage.classList.remove('d-none');
-            
-            setTimeout(function() {
-                successMessage.classList.add('d-none');
-                form.reset();
-                form.classList.remove('was-validated');
-            }, 5000);
-        }
-        
-        form.classList.add('was-validated');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
     
-    const inputs = document.querySelectorAll('.form-control');
-    inputs.forEach(input => {
-        input.addEventListener('input', function() {
-            if (this.value.trim() !== '') {
-                this.style.borderColor = '#00d084';
-            } else {
-                this.style.borderColor = '#e0e0e0';
-            }
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px)';
+            this.style.boxShadow = '0 12px 24px rgba(0,0,0,0.15)';
         });
         
-        input.addEventListener('blur', function() {
-            if (this.value.trim() === '') {
-                this.style.borderColor = '#e0e0e0';
-            }
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
         });
     });
+
+    const buttons = document.querySelectorAll('.btn');
+    
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.05)';
+            this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.2)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+            this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+        });
+    });
+});
 </script>
-</div>
-</div>
 </div>
 <footer style="width: 100%; z-index: 1000;">
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); color: #ffffff; padding: 60px 0 0 0; margin-top: 80px; position: relative; overflow: hidden;">

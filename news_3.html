@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light" style="background: transparent; padding: 0;">
 <a class="navbar-brand" href="/" style="display: flex; align-items: center;">
-<img alt="Speed Up - macOS optimization and performance solutions logo" src="images/image_0_contacts.png" style="max-height: 64px; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease;"/>
+<img alt="Speed Up - macOS optimization and performance solutions logo" src="images/image_0_news_3.png" style="max-height: 64px; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s ease;"/>
 </a>
 <button aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#mainNavigation" data-toggle="collapse" style="border: 2px solid #FFFFFF; background: #FFFFFF; border-radius: 8px;" type="button">
 <span class="navbar-toggler-icon"></span>
@@ -391,458 +391,127 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </header>
-<div class="row">
-<div class="col-md-6">
-<style>
-/* Universal Image Constraints */
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.contact-container {
-    padding: 60px 30px;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.contact-card {
-    background: #FFFFFF;
-    border-radius: 24px;
-    padding: 50px 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
-}
-
-.contact-title {
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: #2D2D2D;
-    margin-bottom: 15px;
-    letter-spacing: -0.5px;
-}
-
-.contact-subtitle {
-    font-size: 1.2rem;
-    color: #666666;
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-.contact-info-item {
-    background: #F8F9FA;
-    border-radius: 16px;
-    padding: 25px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    border-left: 5px solid #FF6B9D;
-}
-
-.contact-info-item:hover {
-    background: #FFF5F8;
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(255,107,157,0.2);
-}
-
-.contact-icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.contact-info-item:hover .contact-icon {
-    transform: rotate(5deg) scale(1.1);
-}
-
-.contact-icon i {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-}
-
-.contact-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #999999;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.contact-value {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #2D2D2D;
-    line-height: 1.6;
-}
-
-.contact-value a {
-    color: #2D2D2D;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-value a:hover {
-    color: #FF6B9D;
-}
-
-.map-container {
-    margin-top: 40px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.map-container img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.office-hours {
-    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
-    color: #FFFFFF;
-}
-
-.office-hours h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.hours-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.hours-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-}
-
-.hours-list li:last-child {
-    border-bottom: none;
-}
-
-.day {
-    font-weight: 600;
-}
-
-.time {
-    font-weight: 400;
-    opacity: 0.9;
-}
-
-.cta-section {
-    background: #FFF5F8;
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.cta-section h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #2D2D2D;
-    margin-bottom: 15px;
-}
-
-.cta-section p {
-    color: #666666;
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-}
-
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%);
-    color: #FFFFFF;
-    padding: 15px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255,107,157,0.3);
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255,107,157,0.4);
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .contact-container {
-        padding: 40px 20px;
-    }
-    
-    .contact-card {
-        padding: 30px 25px;
-        border-radius: 16px;
-    }
-    
-    .contact-title {
-        font-size: 2rem;
-    }
-    
-    .contact-subtitle {
-        font-size: 1rem;
-    }
-    
-    .contact-info-item {
-        padding: 20px;
-    }
-    
-    .contact-value {
-        font-size: 1rem;
-    }
-    
-    .map-container img {
-        height: 200px;
-    }
-    
-    .office-hours {
-        padding: 20px;
-    }
-    
-    .cta-section {
-        padding: 20px;
-    }
-    
-    .cta-section h3 {
-        font-size: 1.4rem;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-title {
-        font-size: 1.6rem;
-    }
-    
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .contact-icon i {
-        font-size: 1.2rem;
-    }
-    
-    .hours-list li {
-        font-size: 0.9rem;
-    }
-}
-</style>
-<div class="contact-container">
-<div class="container">
-<div class="contact-card">
-<h1 class="contact-title">Get in Touch</h1>
-<p class="contact-subtitle">We're here to help you optimize your macOS experience and boost your Mac's performance. Reach out to our expert team for technical support and custom software solutions.</p>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-building"></i>
-</div>
-<div class="contact-label">Company</div>
-<div class="contact-value">Apex Digital Solutions</div>
-</div>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<div class="contact-label">Address</div>
-<div class="contact-value">1400 N Dallas Pkwy Suite 300<br/>Plano, TX 75074<br/>
-                    United States
-                </div>
-</div>
-<div class="contact-info-item">
-<div class="contact-icon">
-<i class="fas fa-phone"></i>
-</div>
-<div class="contact-label">Phone</div>
-<div class="contact-value">
-<a href="tel:+19727352200">(972) 735-2200</a>
+<div class="container my-5">
+<article class="row justify-content-center">
+<div class="col-lg-10 col-xl-9">
+<div class="mb-5">
+<h1 class="display-4 fw-bold mb-3" style="color: #1d1d1f;">Mastering Mac Storage Management: A Complete Guide to Apple's Built-in Optimization Tools</h1>
+<div class="d-flex align-items-center mb-4">
+<span class="badge rounded-pill px-3 py-2 me-3" style="background-color: #ff2d55; color: white; font-size: 0.9rem;">Storage Optimization</span>
+<span class="text-muted" style="font-size: 0.95rem;"><i class="far fa-calendar-alt me-2"></i>January 22, 2025</span>
 </div>
 </div>
-<div class="map-container">
-<img alt="Map showing Apex Digital Solutions office location at 1400 N Dallas Parkway Suite 300 in Plano, Texas, with surrounding streets and landmarks visible" src="images/image_1_contacts.png"/>
+<div class="card border-0 rounded-4 mb-5 overflow-hidden" style="box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+<img alt="Mac Storage Management interface displaying storage breakdown with colorful categories including Applications, Documents, System, and iCloud optimization options on a clean macOS desktop" class="img-fluid" src="images/image_1_news_3.png" style="opacity: 1; display: block;"/>
 </div>
-<div class="office-hours">
-<h3><i class="far fa-clock"></i> Office Hours</h3>
-<ul class="hours-list">
-<li>
-<span class="day">Monday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Tuesday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Wednesday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Thursday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Friday</span>
-<span class="time">9:00 AM - 6:00 PM</span>
-</li>
-<li>
-<span class="day">Saturday</span>
-<span class="time">10:00 AM - 4:00 PM</span>
-</li>
-<li>
-<span class="day">Sunday</span>
-<span class="time">Closed</span>
-</li>
+<div class="mb-5">
+<p class="lead" style="color: #1d1d1f; font-size: 1.25rem; line-height: 1.6;">Running out of disk space on your Mac can significantly impact performance and productivity. Fortunately, Apple has developed sophisticated built-in tools that make storage management straightforward and effective. This comprehensive guide will walk you through everything you need to know about optimizing your Mac's storage using native macOS features.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Whether you're dealing with a nearly full startup disk or simply want to maintain optimal performance, understanding Apple's storage management ecosystem is essential for every Mac user. These tools have evolved significantly over recent macOS versions, offering increasingly intelligent ways to reclaim space without sacrificing accessibility to your important files.</p>
+</div>
+<div class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #1d1d1f;">Understanding Mac Storage Management Tools</h2>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Apple's Storage Management system provides a centralized hub for monitoring and optimizing your Mac's disk space. To access these tools, click the Apple menu, select "About This Mac," then click "Storage" and finally "Manage." This opens a comprehensive dashboard that displays your storage breakdown across different categories including Applications, Documents, System files, and more.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">The Storage Management interface uses color-coded bars to visualize how your disk space is allocated. Each category is represented by a distinct color, making it easy to identify which types of files are consuming the most space. This visual representation is particularly helpful when you need to quickly assess where storage optimization efforts should be focused.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Within the Storage Management window, you'll find several powerful recommendations tailored to your specific usage patterns. These suggestions are generated based on your actual file usage and can include options like storing files in iCloud, optimizing storage automatically, emptying the Trash automatically, and reducing clutter. Each recommendation comes with a detailed explanation of what it does and how much space it could potentially free up.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">The sidebar in Storage Management provides quick access to different file categories. By clicking on Applications, Documents, or other categories, you can drill down into specific areas and see detailed lists of files sorted by size. This granular view makes it easy to identify large files that you may no longer need or that could be moved to external storage or cloud services.</p>
+</div>
+<div class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #1d1d1f;">Optimizing iCloud Integration for Maximum Efficiency</h2>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">One of the most powerful features in Mac storage management is the seamless integration with iCloud. The "Store in iCloud" option allows you to keep your Desktop, Documents, Photos, and Messages in iCloud while maintaining local access to recently used files. This intelligent system automatically manages which files are stored locally and which are kept only in the cloud, based on your usage patterns and available disk space.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">When you enable "Optimize Mac Storage" for iCloud, your Mac will automatically remove local copies of files you haven't accessed recently, keeping only lightweight placeholders that can be downloaded on demand. This happens transparently in the background, so you'll still see all your files in Finder as if they were stored locally. When you open a cloud-only file, macOS downloads it automatically, providing a seamless experience while maximizing available disk space.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">For Photos, iCloud optimization is particularly effective. The "Optimize Mac Storage" option for Photos keeps full-resolution images and videos in iCloud while storing smaller, device-optimized versions locally. This can save enormous amounts of space if you have a large photo library, potentially freeing up hundreds of gigabytes while still allowing you to browse and view your entire collection. Full-resolution versions are downloaded automatically when you need to edit or share them.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">It's important to note that iCloud optimization requires an active iCloud subscription with sufficient storage space. Apple offers various iCloud+ plans, and choosing the right tier depends on your total data volume. The investment in iCloud storage often pays for itself by eliminating the need for expensive local storage upgrades and providing the added benefits of automatic backups and cross-device synchronization.</p>
+</div>
+<div class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #1d1d1f;">Managing System Files and Cache Data</h2>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">System files and cache data can accumulate significantly over time, sometimes consuming tens of gigabytes of valuable disk space. macOS creates various types of cache files to speed up operations, including browser caches, application caches, and system caches. While these files serve important purposes, they can often be safely cleared to reclaim space, as they will be regenerated as needed.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">The Storage Management tool includes a "Reduce Clutter" feature that helps identify large files, downloads you may no longer need, and files you've accessed only once. This feature presents a comprehensive list of items sorted by size, making it easy to review and delete files that are no longer necessary. Pay particular attention to your Downloads folder, which often contains large installer files and documents that have already been moved to their permanent locations.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Another significant source of storage consumption is Time Machine local snapshots. When your backup drive isn't connected, macOS creates local snapshots to ensure you don't lose the ability to restore files. While this is a valuable safety feature, these snapshots can consume considerable space. The system automatically manages these snapshots, deleting older ones when space is needed, but you can also manually delete them through Terminal if necessary.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Application support files and logs can also accumulate over time. Many applications store preferences, caches, and temporary files in the Library folder. While you should be cautious about manually deleting these files, the Storage Management tool can help identify applications that are using excessive space for support files. In some cases, reinstalling an application can help clear out accumulated data that's no longer needed.</p>
+</div>
+<div class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #1d1d1f;">Implementing Automatic Storage Optimization</h2>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">macOS offers several automatic optimization features that work continuously in the background to maintain healthy storage levels. The "Empty Trash Automatically" option removes items from the Trash that have been there for more than 30 days. This ensures that deleted files don't linger indefinitely, consuming space unnecessarily. This feature is particularly useful if you tend to forget about emptying the Trash manually.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">The "Optimize Storage" recommendation works in conjunction with iCloud to automatically remove movies and TV shows you've already watched from Apple TV. Since these media files can be extremely large, often several gigabytes each, this automatic cleanup can free up substantial space over time. You can always re-download content from your purchase history if you want to watch it again.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">For email users, the Mail application can consume significant storage with attachments and message data. The Storage Management tool can identify large email attachments and help you download them to a specific location or delete them from Mail while keeping the messages themselves. This is particularly useful for users who receive large files via email regularly and don't need to keep them in their mail database indefinitely.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Setting up these automatic features creates a self-maintaining storage system that requires minimal manual intervention. By enabling these options, you establish a foundation for long-term storage health, reducing the likelihood of encountering "disk full" warnings and maintaining optimal Mac performance without constant manual cleanup efforts.</p>
+</div>
+<div class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #1d1d1f;">Best Practices for Long-term Storage Health</h2>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Maintaining healthy storage habits goes beyond using Apple's built-in tools. Regular audits of your file system can help prevent storage issues before they become critical. Schedule monthly reviews of your largest folders and files, questioning whether you still need each item. Consider implementing a personal file organization system that includes regular archiving of older projects and documents to external storage or cloud services.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Be mindful of application installations and updates. Some applications, particularly creative software and development tools, can consume enormous amounts of space. Regularly review your Applications folder and remove programs you no longer use. Additionally, be aware that application updates sometimes leave behind old versions or installation files that can be safely deleted after the update is complete.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Consider using external storage solutions for large media libraries, project archives, and backup files. Modern external SSDs offer fast performance and large capacities at reasonable prices. By moving infrequently accessed files to external storage, you can keep your internal drive focused on active projects and system files, which helps maintain optimal performance and reduces the frequency of storage management tasks.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Finally, maintain at least 10-15% of your total disk space as free space. macOS performs best when it has adequate room for virtual memory, temporary files, and system operations. If your disk regularly approaches full capacity, consider upgrading to a larger internal drive or being more aggressive about moving files to external or cloud storage. This buffer space is essential for smooth system operation and can prevent performance degradation that occurs when a Mac's boot drive becomes too full.</p>
+</div>
+<div class="card border-0 rounded-4 p-4 mb-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);">
+<div class="card-body">
+<h3 class="h4 fw-bold mb-3" style="color: white;">Key Takeaways</h3>
+<ul class="mb-0" style="color: white; font-size: 1.05rem; line-height: 1.8;">
+<li class="mb-2">Access Storage Management through Apple menu → About This Mac → Storage → Manage for comprehensive disk space analysis</li>
+<li class="mb-2">Enable iCloud optimization to automatically manage local storage while maintaining access to all your files</li>
+<li class="mb-2">Use automatic features like Empty Trash Automatically and Optimize Storage for hands-free maintenance</li>
+<li class="mb-2">Regularly review and clean up large files, downloads, and application caches using the Reduce Clutter feature</li>
+<li class="mb-2">Maintain at least 10-15% free space on your boot drive for optimal Mac performance</li>
+<li>Implement a regular storage audit schedule and consider external storage for large media libraries</li>
 </ul>
 </div>
-<div class="cta-section">
-<h3>Need Technical Support?</h3>
-<p>Our development team specializes in macOS optimization, custom software solutions, and system integration services.</p>
-<a class="cta-button" href="services.html">
-<i class="fas fa-code"></i>View Our Services</a>
+</div>
+<div class="mb-5">
+<h2 class="h2 fw-bold mb-4" style="color: #1d1d1f;">Conclusion</h2>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Effective storage management is crucial for maintaining a fast and responsive Mac. Apple's built-in Storage Management tools provide a comprehensive, user-friendly solution that addresses most storage challenges without requiring third-party software. By understanding and utilizing these features, you can ensure your Mac operates at peak performance while avoiding the frustration of running out of disk space.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">The combination of intelligent iCloud integration, automatic optimization features, and powerful manual management tools gives Mac users everything they need to maintain healthy storage levels. Whether you're working with a Mac that has limited internal storage or simply want to keep your system running smoothly, these strategies will help you make the most of your available disk space.</p>
+<p style="color: #424245; font-size: 1.1rem; line-height: 1.7;">Remember that storage management is an ongoing process, not a one-time task. By establishing good habits, enabling automatic features, and performing regular reviews of your file system, you can prevent storage issues before they impact your productivity. Your Mac will thank you with faster performance, quicker boot times, and a more responsive overall experience.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="col-md-6 p-4">
-<div class="card shadow-sm" style="border-radius: 20px; border: none; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
-<div class="card-body p-5">
-<h2 class="mb-4" style="color: #1a1a1a; font-weight: 700; font-size: 2rem;">Get In Touch</h2>
-<p class="mb-4" style="color: #555; font-size: 1rem; line-height: 1.6;">Have questions about optimizing your Mac performance? Our development team is here to help you speed up your macOS system and improve your workflow.</p>
-<form class="needs-validation" id="contactForm" novalidate="">
-<div class="mb-4">
-<label class="form-label" for="nameInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Full Name</label>
-<input class="form-control" id="nameInput" required="" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; transition: all 0.3s ease;" type="text"/>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter your name.</div>
-</div>
-<div class="mb-4">
-<label class="form-label" for="emailInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Email Address</label>
-<input class="form-control" id="emailInput" required="" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; transition: all 0.3s ease;" type="email"/>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter a valid email address.</div>
-</div>
-<div class="mb-4">
-<label class="form-label" for="messageInput" style="color: #333; font-weight: 600; font-size: 0.95rem;">Message</label>
-<textarea class="form-control" id="messageInput" required="" rows="5" style="border-radius: 12px; border: 2px solid #e0e0e0; padding: 12px 16px; font-size: 1rem; resize: vertical; transition: all 0.3s ease;"></textarea>
-<div class="invalid-feedback" style="font-size: 0.875rem;">Please enter your message.</div>
-</div>
-<div class="alert alert-success d-none" id="successMessage" role="alert" style="border-radius: 12px; border: none; background: linear-gradient(135deg, #00d084 0%, #00b872 100%); color: white; font-weight: 600; padding: 16px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 208, 132, 0.3);">
-<i class="fas fa-check-circle me-2"></i>Successfully sent!</div>
-<button class="btn btn-primary w-100" style="border-radius: 12px; padding: 14px 24px; font-size: 1.1rem; font-weight: 600; border: none; background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); transition: all 0.3s ease;" type="submit">
-<i class="fas fa-paper-plane me-2"></i>Send Message
-                </button>
-</form>
-</div>
-</div>
+</article>
 </div>
 <style>
-    .form-control:focus {
-        border-color: #007bff !important;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15) !important;
-        outline: none;
+  body {
+    background-color: #f5f5f7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  .badge {
+    transition: transform 0.2s ease;
+  }
+  
+  .badge:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  article a {
+    color: #0071e3;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  article a:hover {
+    color: #0077ed;
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .display-4 {
+      font-size: 2rem;
     }
     
-    .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+    .lead {
+      font-size: 1.1rem;
     }
     
-    .btn-primary:active {
-        transform: translateY(0);
+    p {
+      font-size: 1rem;
     }
-    
-    .card {
-        transition: all 0.3s ease;
-    }
-    
-    @media (max-width: 768px) {
-        .card-body {
-            padding: 2rem !important;
-        }
-        
-        h2 {
-            font-size: 1.75rem !important;
-        }
-    }
+  }
 </style>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        
-        const form = this;
-        const successMessage = document.getElementById('successMessage');
-        
-        if (form.checkValidity()) {
-            successMessage.classList.remove('d-none');
-            
-            setTimeout(function() {
-                successMessage.classList.add('d-none');
-                form.reset();
-                form.classList.remove('was-validated');
-            }, 5000);
-        }
-        
-        form.classList.add('was-validated');
-    });
-    
-    const inputs = document.querySelectorAll('.form-control');
-    inputs.forEach(input => {
-        input.addEventListener('input', function() {
-            if (this.value.trim() !== '') {
-                this.style.borderColor = '#00d084';
-            } else {
-                this.style.borderColor = '#e0e0e0';
-            }
-        });
-        
-        input.addEventListener('blur', function() {
-            if (this.value.trim() === '') {
-                this.style.borderColor = '#e0e0e0';
-            }
-        });
-    });
-</script>
-</div>
-</div>
 </div>
 <footer style="width: 100%; z-index: 1000;">
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); color: #ffffff; padding: 60px 0 0 0; margin-top: 80px; position: relative; overflow: hidden;">
